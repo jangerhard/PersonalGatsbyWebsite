@@ -1,8 +1,8 @@
 {
-  "name": "Personal Website",
-  "description": "Personal Website",
+  "name": "PersonalWebsite",
+  "description": "Personal Website for Jan Schøpp",
   "version": "1.0.0",
-  "author": "Jan Schoepp",
+  "author": "Jan Schøpp",
   "dependencies": {
     "gatsby": "^1.9.223",
     "gatsby-link": "^1.6.38",

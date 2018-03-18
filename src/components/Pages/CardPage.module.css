@@ -18,6 +18,7 @@
     display: flex;
     justify-content: center;
     -webkit-box-pack: center;
+    text-align: center;
 }
 
 .card_image {

@@ -1,15 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 
-h1,
-h2 {
-    color: #484848;
-}
-
 .display1 {
     font-weight: 400;
 }
 
 .card {
+    color: #484848;
+
     padding: 32px;
     background: white;
     margin: 1.5rem;

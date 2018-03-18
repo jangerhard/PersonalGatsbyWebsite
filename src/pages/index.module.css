@@ -60,10 +60,11 @@ svg {
     fill: #fff;
     font-family: 'Josefin Sans', serif;
     font-size: 50px;
+    font-weight: 400;
     stroke: #fff;
     stroke-linecap: butt;
     stroke-linejoin: miter;
-    stroke-width: 3;
+    stroke-width: 1;
     stroke-dasharray: 600;
     opacity: 10;
     animation: animate 3s cubic-bezier(.82, .18, .97, .27);

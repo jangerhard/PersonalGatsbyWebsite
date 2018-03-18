@@ -13,7 +13,7 @@ class CardPage extends React.Component {
 
                 <div className={styles.card_image}>
                     <img className={styles.img}
-                         src="https://lh3.googleusercontent.com/acG78-CjjxlNBVcqf-7wbY_tfyuqcqIk19xpBerfeY6S80E5bmgaodHhsm9h7EnD8aSDM-rASyJCZSwHhkFZDXmhT33sXXWMeZwJg3TURUM84X82H78C4VkDHiihAVLbKwTkJawCcRYqZYqbAJK4OMzHYGpz4NO3DXUeTmf3ms00vnDWg5DHkXZbBQPNiTdyy8JLLWGXRroiA30oArp32hS8ZylNwu_52cFOx_0Fk-w7p-vfyHfTKqAn4b3YB3ty_wgrbgx7MyfCaiLUiehgKEAVnbYqbjwXYq2MwxQoUokjHEnxoRs42meJ5l5u4AeBtWK5O9t8qNo9ZzjWnOAIhuz2cexeUlcc3YPvv3CN1zwHPbMf_BNpSR25fGVyNH8kHVysi4EyAt8_iEIhlYJTqewqTsns1Ly6W0FewDnf62uVnGkixIwWhWqtBp26SUjRZ4DLu6O5021PLncMOKkvIQuJhDaZ6pIxmiXTKbHLgQ4EeUaU14FSs6PPSAcCnhRfMpB_ToSputcCJUm9pWaTxBu6NnImW_h0EsjtQLIIig4bqIpcDl7J9HD9YAuZqMBF-I5LgNMvqsMEZGgMqaxuVb2zx9kUrgfV1n9KgwmS=w402-h449-no"/>
+                         src="https://lh3.googleusercontent.com/Pgjnw87eixRiFOzTS1-CphSzFn2v_RSWseCYvkmKMtz93w2YLvBn8GVQui8_AMgNWMjFSVQ7CLTcIqM7AXjvw0FgrbchptRn8P9vrcKNnnov55F3w1WrkyO07E2eImcTK6EnfmWV_mj18ke_HBv7O73UPCArlVyShGCUBZE2qRUMUl5bXJWD2qmtzhECYwFBLsJjkTu_d9uB31as8kKi6qq91yfttfsCHnKgi7wn1-ns4b9PvdM2sLBXyaW77Q4GoNFBDD2_F6NOxtqraTv045h85p7DIg40Z9uADuTB9zymmmHOpKsff3_MtSomYhswSS2rLlLd4FHVd3JcG3POjQ7_G0z6KTHKUv8bj1uxijgz64YC9COdFt_faLMd_UmXMby8wjOic7ZBTTa8fa0pXpzylG0hHBOQS1KPuEHM2MNjf4_974UvOVuJd4_xkMGXgb30Z1I8cSv_iXQ2PoOjl7jFPvSSk_Abb8YkfOfpc6n8dMKUWqsBo-h3XjWRbruB6otlPT3QP3QhXA89X70eAah4etdjW1UENrpRAheoZYR0O1gZBnB344B0o1OI_cvl5Ke95FRhVhVFOaFhik-ZYW6DqBYg33z7p-THKANh=w401-h474-no"/>
                 </div>
                 <div className={styles.card_info}>
                     <h2>Humble beginnings</h2>

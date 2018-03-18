@@ -12,7 +12,7 @@ h2 {
 .card {
     padding: 32px;
     background: white;
-    margin: 3rem;
+    margin: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
@@ -35,7 +35,13 @@ h2 {
 }
 
 .img {
-    height: auto;
     width: auto;
+    min-height: 240px;
     max-width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .img {
+        height: 240px;
+    }
 }

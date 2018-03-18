@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
+h1,
+h2 {
+    color: #484848;
+}
+
+.display1 {
+    font-weight: 400;
+}
+
+.card {
+    padding: 32px;
+    background: white;
+    margin: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card_top {
+    display: flex;
+    justify-content: center;
+    -webkit-box-pack: center;
+}
+
+.card_image {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    -webkit-box-pack: center;
+}
+
+.card_info{
+    margin-top: 38px;
+}
+
+.img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+}

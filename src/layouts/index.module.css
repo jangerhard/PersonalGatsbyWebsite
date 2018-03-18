@@ -1,0 +1,33 @@
+:root {
+    --main-bg-color: #FF6103;
+    --secondary-bg-color: #FCDC3B;
+}
+
+.body {
+
+    background: -webkit-linear-gradient(
+            to bottom right,
+            var(--main-bg-color),
+            var(--secondary-bg-color)
+    ) fixed;
+    background: -moz-linear-gradient(
+            to bottom right,
+            var(--main-bg-color),
+            var(--secondary-bg-color)
+    ) fixed;
+    background: -ms-linear-gradient(
+            to bottom right,
+            var(--main-bg-color),
+            var(--secondary-bg-color)
+    ) fixed;
+    background: -o-linear-gradient(
+            to bottom right,
+            var(--main-bg-color),
+            var(--secondary-bg-color)
+    ) fixed;
+    background: linear-gradient(
+            to bottom right,
+            var(--main-bg-color),
+            var(--secondary-bg-color)
+    ) fixed;
+}

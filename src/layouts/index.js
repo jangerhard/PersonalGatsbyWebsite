@@ -3,9 +3,10 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
+import styles from './index.module.css'
 
 const TemplateWrapper = ({children}) => (
-    <div>
+    <div className={styles.body}>
         <Helmet
             title="Jan Schøpp's Website"
             meta={[
@@ -18,14 +19,7 @@ const TemplateWrapper = ({children}) => (
             ]}
         />
         <Header/>
-        <div
-            style={{
-                margin: '0 auto',
-                maxWidth: 960,
-                padding: '0px 1.0875rem 1.45rem',
-                paddingTop: 0,
-            }}
-        >
+        <div style={{ margin: `0 auto`, maxWidth: 1050, padding: `0 1rem` }}>
             {children()}
         </div>
     </div>

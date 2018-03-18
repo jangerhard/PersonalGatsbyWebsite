@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Card_page from '../components/Pages/card_page'
+import CardPage from '../components/Pages/CardPage'
 
 export default () => (
     <div>
 
-        <Card_page/>
+        <CardPage/>
 
         <Link to="/about-css-modules/" >About</Link>
     </div>

@@ -12,27 +12,18 @@
     /* fill the container, preserving aspect ratio, and cropping to fit */
     background-size: cover;
 
-    /* center the image vertically and horizontally */
-    background-position: top center;
-
     /* round the edges to a circle with border radius 1/2 container size */
     border-radius: 50%;
 
     /* Give margins */
     margin: 20px auto;
 
-    position: relative;
-
     animation: fadein 5s;
 }
 
 .layout {
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-
-    justify-content: center;
+    max-width: 100%;
+    padding: 24px;
 }
 
 .text {
@@ -70,6 +61,32 @@
     animation: animate 3s cubic-bezier(.82, .18, .97, .27);
 }
 
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+
+    z-index: 10;
+}
+
+.largeButton h3 {
+    font-size: 0.8em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    font-weight: bold;
+}
+
+.largeButton {
+    border: 3px solid white;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .3s cubic-bezier(.25, .8, .5, 1), color 1ms;
+
+    min-width: 100px;
+}
+
 @keyframes animate {
     0% {
         opacity: 0;
@@ -93,14 +110,28 @@
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
+
 @-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
+
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

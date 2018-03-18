@@ -1,12 +1,20 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import CardPage from '../components/Pages/CardPage'
+import React from 'react';
+import style from './index.module.css';
 
 export default () => (
-    <div>
 
-        <CardPage/>
+    <div className={style.layout}>
+        <div className={style.logoCircle}/>
 
-        <Link to="/about-css-modules/" >About</Link>
+        <div className={style.text}>
+            <svg >
+                <text x={25} y={40} className={style.svgText}>
+                    Jan Schøpp
+                </text>
+            </svg>
+            <h2>Full Stack Developer based in Oslo, Norway</h2>
+        </div>
     </div>
+
+
 );

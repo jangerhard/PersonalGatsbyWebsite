@@ -3,7 +3,7 @@
     --secondary-bg-color: #FCDC3B;
 }
 
-.body {
+body {
 
     padding-left: 25px;
     padding-right: 25px;
@@ -12,25 +12,25 @@
             to bottom right,
             var(--main-bg-color),
             var(--secondary-bg-color)
-    );
+    ) fixed;
     background: -moz-linear-gradient(
             to bottom right,
             var(--main-bg-color),
             var(--secondary-bg-color)
-    );
+    ) fixed;
     background: -ms-linear-gradient(
             to bottom right,
             var(--main-bg-color),
             var(--secondary-bg-color)
-    );
+    ) fixed;
     background: -o-linear-gradient(
             to bottom right,
             var(--main-bg-color),
             var(--secondary-bg-color)
-    );
+    ) fixed;
     background: linear-gradient(
             to bottom right,
             var(--main-bg-color),
             var(--secondary-bg-color)
-    );
+    ) fixed;
 }

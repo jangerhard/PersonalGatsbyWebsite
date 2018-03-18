@@ -21,6 +21,11 @@ export default () => (
                     LinkedIn
                 </h3>
             </a>
+            <a href="https://github.com/jangerhard" className={style.largeButton} data-ripple="true">
+                <h3>
+                    Github
+                </h3>
+            </a>
             <Link to="/sauces/" className={style.largeButton} data-ripple="true">
                 <h3>
                     Sauces

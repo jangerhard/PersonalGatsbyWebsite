@@ -10,6 +10,13 @@ body {
             var(--main-bg-color),
             var(--secondary-bg-color)
     ) fixed;
+    background: -webkit-gradient(
+            linear,
+            left top,
+            right bottom,
+            var(--main-bg-color),
+            var(--secondary-bg-color)
+    ) fixed;
     background: -moz-linear-gradient(
             to bottom right,
             var(--main-bg-color),

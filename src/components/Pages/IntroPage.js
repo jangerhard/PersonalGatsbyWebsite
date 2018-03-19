@@ -1,5 +1,6 @@
 import React from "react";
 import style from './IntroPage.module.css';
+import Link from 'gatsby-link';
 
 const IntroPage = () => (
     <div className={style.layout}>

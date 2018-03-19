@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
+.logoCircle {
+
+    /* avatar */
+    background-image: url('https://en.gravatar.com/userimage/128548950/67457155631d006e64b3d7c809164997.png?size=200');
+
+    /* make a square container */
+    width: 200px;
+    height: 200px;
+
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+
+    /* Give margins */
+    margin: 20px auto;
+
+    animation: fadein 5s;
+}
+
+.layout {
+    max-width: 100%;
+    padding: 24px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.text svg {
+    height: 60px;
+    max-width: fit-content;
+}
+
+.svgText {
+    fill: #fff;
+    font-family: 'Josefin Sans', serif;
+    font-size: 50px;
+    font-weight: 400;
+    stroke: #fff;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-width: 1;
+    stroke-dasharray: 600;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(.82, .18, .97, .27);
+}
+
+.buttons {
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.largeButton h3 {
+    font-size: 0.8em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    font-weight: bold;
+}
+
+.largeButton {
+    border: 2px solid white;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .3s cubic-bezier(.25, .8, .5, 1), color 1ms;
+
+    min-width: 90px;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 600;
+    }
+    20% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 600;
+    }
+    90% {
+        fill: rgba(255, 255, 255, 0);
+    }
+    100% {
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

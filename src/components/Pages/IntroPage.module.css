@@ -22,9 +22,10 @@
 }
 
 .layout {
-
     max-width: 100%;
     padding: 24px;
+
+    animation: fadein 3s;
 }
 
 .text {

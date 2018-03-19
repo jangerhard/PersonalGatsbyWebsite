@@ -5,8 +5,6 @@
 
 .body {
 
-    height: 100vh;
-
     background: -webkit-linear-gradient(
             to bottom right,
             var(--main-bg-color),

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '../components/Header'
+import Header from '../components/Header/HeaderComponent'
 import styles from './index.module.css'
 import Particles from 'react-particles-js';
 
@@ -35,7 +35,7 @@ const TemplateWrapper = ({children}) => (
                 }}
             />
         </div>
-        <div className="pages">
+        <div className={styles.pages}>
             {children()}
         </div>
     </div>

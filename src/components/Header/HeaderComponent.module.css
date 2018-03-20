@@ -1,0 +1,26 @@
+.bringToTop {
+    flex-basis: 8%;
+    max-width: 8%;
+    z-index: 10!important;
+}
+
+.header {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    margin: auto;
+    padding: 16px;
+    width: 100%;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.links {
+    flex-basis: 92%;
+    display: flex;
+    max-width: 92%;
+    justify-content: flex-end;
+}

@@ -1,4 +1,4 @@
-.largeButton h3 {
+.text {
     font-size: 0.8em;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
@@ -10,7 +10,6 @@
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    transition: .3s cubic-bezier(.25, .8, .5, 1), color 1ms;
 
     min-width: 90px;
 }

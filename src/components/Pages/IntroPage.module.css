@@ -38,14 +38,10 @@
 
 .buttons {
 
+    width: 300px;
     display: flex;
+    justify-content: space-between;
     text-align: center;
-}
-
-@media screen and (max-width: 480px) {
-    .buttons {
-        width: 90%;
-    }
 }
 
 /* Safari, Chrome and Opera > 12.1 */

@@ -7,7 +7,7 @@ const BorderedButton = ({href, to, name}) => {
     if (to != null) {
         return (
             <Link to={to} className={style.largeButton} data-ripple="true">
-                <h3>
+                <h3 className={style.text}>
                     {name}
                 </h3>
             </Link>
@@ -15,7 +15,7 @@ const BorderedButton = ({href, to, name}) => {
     } else {
         return (
             <a href={href} className={style.largeButton} data-ripple="true">
-                <h3>
+                <h3 className={style.text}>
                     {name}
                 </h3>
             </a>

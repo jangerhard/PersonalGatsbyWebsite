@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
 import styles from './index.module.css'
+import Particles from 'react-particles-js';
 
 const TemplateWrapper = ({children}) => (
     <div className={styles.body}>
@@ -19,6 +20,9 @@ const TemplateWrapper = ({children}) => (
             ]}
         />
         <Header/>
+        <div className="particles">
+            <Particles />
+        </div>
         <div style={{ margin: `0 auto`, maxWidth: 800 }}>
             {children()}
         </div>

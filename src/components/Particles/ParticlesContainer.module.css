@@ -1,6 +1,6 @@
 .particles {
     width: 100%;
-    height: auto;
+    min-height: 100vh;
     position: absolute;
     z-index: -1;
     overflow: hidden;

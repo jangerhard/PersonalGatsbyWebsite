@@ -1,0 +1,61 @@
+.bringToTop {
+    flex-basis: 8%;
+    max-width: 8%;
+    z-index: 10!important;
+}
+
+.header {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    margin: auto;
+    padding: 16px;
+    width: 100%;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.links {
+    flex-basis: 92%;
+    display: flex;
+    max-width: 92%;
+    justify-content: flex-end;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 200;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    margin: 6px 8px;
+    min-width: 88px;
+    outline: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: .3s cubic-bezier(.25,.8,.5,1),color 1ms;
+    transition: .3s cubic-bezier(.25,.8,.5,1),color 1ms;
+    position: relative;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.button {
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: inherit;
+    color: inherit;
+    display: flex;
+    height: 100%;
+    -webkit-box-flex: 1;
+    transition: .3s cubic-bezier(.25,.8,.5,1);
+    white-space: nowrap;
+}

@@ -47,3 +47,8 @@ body {
     position: absolute;
     z-index: -1;
 }
+
+.pages {
+    max-width: 800px;
+    margin: 24px auto 0;
+}

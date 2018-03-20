@@ -35,7 +35,7 @@ const TemplateWrapper = ({children}) => (
                 }}
             />
         </div>
-        <div style={{ margin: `0 auto`, maxWidth: 800 }}>
+        <div className="pages">
             {children()}
         </div>
     </div>

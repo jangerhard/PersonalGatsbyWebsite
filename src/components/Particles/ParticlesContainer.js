@@ -2,24 +2,28 @@ import React from "react";
 import styles from './ParticlesContainer.module.css';
 import Particles from 'react-particles-js';
 
-const ParticlesContainer = () => (
+const ParticlesContainer = () => {
 
-    <div className={styles.particles}>
+    // TODO: Hide on mobile
 
-        <Particles
-            params={{
-                particles: {
-                    line_linked: {
-                        shadow: {
-                            enable: true,
-                            color: "#FFF",
-                            blur: 5
+    return (
+        <div className={styles.particles}>
+
+            <Particles
+                params={{
+                    particles: {
+                        line_linked: {
+                            shadow: {
+                                enable: true,
+                                color: "#FFF",
+                                blur: 5
+                            }
                         }
                     }
-                }
-            }}
-        />
-    </div>
-);
+                }}
+            />
+        </div>
+    )
+};
 
 export default ParticlesContainer;

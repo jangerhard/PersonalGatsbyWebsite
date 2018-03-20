@@ -21,8 +21,9 @@ const TemplateWrapper = ({children}) => (
         />
         <Header/>
 
-        <ParticlesContainer/>
-
+        {/* TODO: Fix on mobile
+            <ParticlesContainer/>
+        */}
         <div className={styles.pages}>
             {children()}
         </div>

@@ -1,5 +1,7 @@
 .particles {
     width: 100%;
+    height: auto;
     position: absolute;
     z-index: -1;
+    overflow: hidden;
 }

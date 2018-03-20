@@ -21,7 +21,19 @@ const TemplateWrapper = ({children}) => (
         />
         <Header/>
         <div className="particles">
-            <Particles />
+            <Particles
+                params={{
+                    particles: {
+                        line_linked: {
+                            shadow: {
+                                enable: true,
+                                color: "#3CA9D1",
+                                blur: 5
+                            }
+                        }
+                    }
+                }}
+            />
         </div>
         <div style={{ margin: `0 auto`, maxWidth: 800 }}>
             {children()}

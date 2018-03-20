@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './ParticlesContainer.module.css';
 import Particles from 'react-particles-js';
+import config from './config.json'
 
 const ParticlesContainer = () => {
 
@@ -10,17 +11,7 @@ const ParticlesContainer = () => {
         <div className={styles.particles}>
 
             <Particles
-                params={{
-                    particles: {
-                        line_linked: {
-                            shadow: {
-                                enable: true,
-                                color: "#FFF",
-                                blur: 5
-                            }
-                        }
-                    }
-                }}
+                params={config}
             />
         </div>
     )

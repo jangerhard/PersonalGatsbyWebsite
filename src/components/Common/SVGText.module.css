@@ -1,0 +1,41 @@
+.container {
+
+}
+
+.svg {
+    height: 60px;
+}
+
+.text {
+    fill: #fff;
+    font-size: 50px;
+    font-weight: 200;
+    stroke: #fff;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-width: 1;
+    stroke-dasharray: 600;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(.82, .18, .97, .27);
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 600;
+    }
+    20% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 600;
+    }
+    90% {
+        fill: rgba(255, 255, 255, 0);
+    }
+    100% {
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}

@@ -10,6 +10,7 @@ const Header = () => (
         </div>
         <div className={style.links}>
 
+            <FlatButton to="/" name="Home" />
             <FlatButton to="/sauces/" name="Sauces" />
 
         </div>

@@ -1,0 +1,16 @@
+.largeButton h3 {
+    font-size: 0.8em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    font-weight: bold;
+}
+
+.largeButton {
+    border: 2px solid white;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .3s cubic-bezier(.25, .8, .5, 1), color 1ms;
+
+    min-width: 90px;
+}

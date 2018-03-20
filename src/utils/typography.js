@@ -6,8 +6,8 @@ import lawtonTheme from "typography-theme-lawton";
 const typography = new Typography({
     baseFontSize: '18px',
     baseLineHeight: 1.666,
-    headerFontFamily: ['Josefin Sans', 'Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
-    bodyFontFamily: ['Georgia', 'serif'],
+    headerFontFamily: ['Josefin Sans', 'sans-serif'],
+    bodyFontFamily: ['Josefin Sans', 'serif'],
     // See below for the full list of options.
 
 });

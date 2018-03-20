@@ -3,8 +3,11 @@
     --secondary-bg-color: #FCDC3B;
 }
 
-body {
+.body {
     min-height: 100vh;
+}
+
+body {
 
     background: -webkit-linear-gradient(
             to bottom right,

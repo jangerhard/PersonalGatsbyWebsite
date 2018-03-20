@@ -65,10 +65,16 @@
 
     display: flex;
     justify-content: space-evenly;
-    width: 90%;
+    width: 50%;
     text-align: center;
     margin: 0 auto;
     z-index: 10;
+}
+
+@media screen and (max-width: 480px) {
+    .buttons {
+        width: 90%;
+    }
 }
 
 .largeButton h3 {

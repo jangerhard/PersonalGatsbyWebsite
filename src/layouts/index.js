@@ -20,14 +20,14 @@ const TemplateWrapper = ({children}) => (
             ]}
         />
         <Header/>
-        <div className="particles">
+        <div className={styles.particles}>
             <Particles
                 params={{
                     particles: {
                         line_linked: {
                             shadow: {
                                 enable: true,
-                                color: "#3CA9D1",
+                                color: "#FFF",
                                 blur: 5
                             }
                         }

@@ -3,31 +3,8 @@
     text-decoration: none;
     display: inline-flex;
     font-size: 14px;
-    font-weight: 200;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
+    font-weight: 400;
     margin: 6px 8px;
     min-width: 88px;
-    outline: 0;
     text-transform: uppercase;
-    -webkit-transition: .3s cubic-bezier(.25,.8,.5,1),color 1ms;
-    transition: .3s cubic-bezier(.25,.8,.5,1),color 1ms;
-    position: relative;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.button {
-    -webkit-box-align: center;
-    align-items: center;
-    border-radius: inherit;
-    color: inherit;
-    display: flex;
-    height: 100%;
-    -webkit-box-flex: 1;
-    transition: .3s cubic-bezier(.25,.8,.5,1);
-    white-space: nowrap;
 }

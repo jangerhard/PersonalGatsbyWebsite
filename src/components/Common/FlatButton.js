@@ -5,9 +5,7 @@ import Link from 'gatsby-link';
 const FlatButton = ({to, name}) => (
 
     <Link to={to} className={style.link} data-ripple="true">
-        <div className={style.button}>
-            {name}
-        </div>
+        {name}
     </Link>
 
 );

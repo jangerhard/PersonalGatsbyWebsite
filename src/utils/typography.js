@@ -5,7 +5,6 @@ const typography = new Typography({
         {
             name: 'Josefin Sans',
             styles: [
-                '300',
                 '400',
             ],
         },

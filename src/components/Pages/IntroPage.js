@@ -1,6 +1,6 @@
 import React from "react";
 import style from './IntroPage.module.css';
-import BorderedButton from '../Common/BorderedButton';
+import Button from '../Common/Button';
 import SVGText from '../Common/SVGText'
 
 const IntroPage = () => (
@@ -13,15 +13,15 @@ const IntroPage = () => (
         <h2>Full Stack Developer based in Oslo, Norway</h2>
 
         <div className={style.buttons}>
-            <BorderedButton
+            <Button
                 href="https://www.linkedin.com/in/jangschoepp/"
                 name="Linkedin"
             />
-            <BorderedButton
+            <Button
                 href="https://github.com/jangerhard"
                 name="Github"
             />
-            <BorderedButton
+            <Button
                 to="/sauces/"
                 name="Sauces"
             />

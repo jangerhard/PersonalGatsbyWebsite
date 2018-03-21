@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './HeaderComponent.module.css'
-import FlatButton from '../Common/FlatButton';
+import Button from '../Common/Button';
 
 const Header = () => (
 
@@ -10,8 +10,8 @@ const Header = () => (
         </div>
         <div className={style.links}>
 
-            <FlatButton to="/" name="Home" />
-            <FlatButton to="/sauces/" name="Sauces" />
+            <Button to="/" name="Home" flat=true />
+            <Button to="/sauces/" name="Sauces" flat=true />
 
         </div>
     </div>

@@ -65,6 +65,11 @@
   "interactivity": {
     "detect_on": "canvas",
     "events": {
+      "onresize" : {
+        "enable" : false,
+        "density_auto" : false,
+        "density_area" : 400
+      },
       "onhover": {
         "enable": false,
         "mode": "repulse"

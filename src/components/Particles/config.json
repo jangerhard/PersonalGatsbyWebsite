@@ -21,7 +21,7 @@
       }
     },
     "opacity": {
-      "value": 1,
+      "value": 0.9,
       "random": false,
       "anim": {
         "enable": false,
@@ -49,7 +49,7 @@
     },
     "move": {
       "enable": true,
-      "speed": 3,
+      "speed": 2,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -68,7 +68,7 @@
       "onresize" : {
         "enable" : true,
         "density_auto" : true,
-        "density_area" : 20
+        "density_area" : 800
       },
       "onhover": {
         "enable": false,

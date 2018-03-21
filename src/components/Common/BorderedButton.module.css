@@ -13,14 +13,3 @@
 
     min-width: 90px;
 }
-
-.link {
-    color: #ffffff;
-    text-decoration: none;
-    display: inline-flex;
-    font-size: 14px;
-    font-weight: 400;
-    margin: 6px 8px;
-    min-width: 88px;
-    text-transform: uppercase;
-}

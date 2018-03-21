@@ -3,18 +3,18 @@ import styles from './ParticlesContainer.module.css';
 import Particles from 'react-particles-js';
 import config from './config.json'
 
-const ParticlesContainer = () => {
-
-    // TODO: Hide on mobile
-
-    return (
-        <div className={styles.particles}>
-
-            <Particles
-                params={config}
-            />
-        </div>
-    )
-};
+const ParticlesContainer = () => (
+    <Particles
+        params={config}
+        style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: -1
+        }}
+    />
+);
 
 export default ParticlesContainer;

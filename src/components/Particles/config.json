@@ -68,7 +68,8 @@
       "onresize" : {
         "enable" : true,
         "density_auto" : true,
-        "density_area" : 1600
+        "density_area" : 400,
+        "value": 40
       },
       "onhover": {
         "enable": false,

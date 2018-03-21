@@ -10,8 +10,8 @@ const Header = () => (
         </div>
         <div className={style.links}>
 
-            <Button to="/" name="Home" flat=true />
-            <Button to="/sauces/" name="Sauces" flat=true />
+            <Button to="/" name="Home" flat="true" />
+            <Button to="/sauces/" name="Sauces" flat="true" />
 
         </div>
     </div>

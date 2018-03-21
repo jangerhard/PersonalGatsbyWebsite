@@ -7,6 +7,9 @@ const ParticlesContainer = () => (
         params={config}
         style={{
             position: "absolute",
+            top: 0,
+            left: 0,
+            minHeight: "100vh",
             zIndex: -1
         }}
     />

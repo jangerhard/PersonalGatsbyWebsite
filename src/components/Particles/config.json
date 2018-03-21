@@ -3,7 +3,7 @@
     "number": {
       "value": 40,
       "density": {
-        "enable": false,
+        "enable": true,
         "value_area": 800
       }
     },
@@ -20,23 +20,23 @@
         "nb_sides": 5
       },
       "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
+        "src": "",
+        "width": 10,
+        "height": 10
       }
     },
     "opacity": {
-      "value": 0.5,
-      "random": false,
+      "value": 0.2244776885211732,
+      "random": true,
       "anim": {
         "enable": false,
-        "speed": 1,
+        "speed": 0.2,
         "opacity_min": 0.1,
         "sync": false
       }
     },
     "size": {
-      "value": 3,
+      "value": 1,
       "random": true,
       "anim": {
         "enable": false,
@@ -47,14 +47,14 @@
     },
     "line_linked": {
       "enable": true,
-      "distance": 150,
+      "distance": 189.39543399174545,
       "color": "#ffffff",
-      "opacity": 0.4,
+      "opacity": 0.19728691040806817,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 1,
+      "speed": 2,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -76,7 +76,7 @@
       },
       "onclick": {
         "enable": false,
-        "mode": "push"
+        "mode": "repulse"
       },
       "resize": true
     },

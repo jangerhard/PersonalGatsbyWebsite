@@ -3,7 +3,7 @@ import style from './HeaderComponent.module.css'
 import FlatButton from '../Common/FlatButton';
 import Link, {withPrefix}  from 'gatsby-link';
 
-const Header = () => {
+const Header = ({location}) => {
 
     const isHomePage = location.pathname === withPrefix("/");
 
@@ -17,7 +17,7 @@ const Header = () => {
             <div className={style.links}>
 
                 <FlatButton to="/sauces/" name="Projects"/>
-                <FlatButton to="/sauces/" name="Education"/>
+                <FlatButton to="/education/" name="Education"/>
                 <FlatButton to="/sauces/" name="Career"/>
 
             </div>

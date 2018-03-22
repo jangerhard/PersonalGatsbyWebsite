@@ -3,9 +3,9 @@ import style from './HeaderComponent.module.css'
 import FlatButton from '../Common/FlatButton';
 import Link, {withPrefix}  from 'gatsby-link';
 
-const Header = ({location}) => {
+const Header = () => {
 
-    const isHomePage = location.pathname === withPrefix("/");
+    const isHomePage = window.location.pathname === withPrefix("/");
 
     return (
 

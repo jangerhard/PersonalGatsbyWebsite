@@ -1,26 +1,42 @@
-.bringToTop {
-    flex-basis: 8%;
-    max-width: 8%;
-    z-index: 10!important;
+.homeLogo {
+
+    /* avatar */
+    background-image: url('https://en.gravatar.com/userimage/128548950/67457155631d006e64b3d7c809164997.png?size=100');
+
+    /* make a square container */
+    width: 70px;
+    height: 70px;
+
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+
+    /* Give margins */
+    margin: 20px auto;
+
 }
 
 .header {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 100%;
-    flex: 1 1 100%;
-    margin: auto;
     padding: 16px;
     width: 100%;
 
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width : 1025px) {
+    .header {
+        padding: 24px 124px;
+        flex-direction: row;
+    }
 }
 
 .links {
     flex-basis: 92%;
-    display: flex;
     max-width: 92%;
+    display: flex;
+    align-items: center;
     justify-content: flex-end;
 }

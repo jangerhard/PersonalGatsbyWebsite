@@ -1,17 +1,19 @@
 import React from 'react'
 import style from './HeaderComponent.module.css'
 import FlatButton from '../Common/FlatButton';
+import Link from 'gatsby-link';
 
 const Header = () => (
 
     <div className={style.header}>
-        <div className={style.bringToTop}>
 
-        </div>
+        <Link to="/" className={style.homeLogo}/>
+
         <div className={style.links}>
 
-            <FlatButton to="/" name="Home" />
-            <FlatButton to="/sauces/" name="Sauces" />
+            <FlatButton to="/sauces/" name="Projects"/>
+            <FlatButton to="/sauces/" name="Education"/>
+            <FlatButton to="/sauces/" name="Career"/>
 
         </div>
     </div>

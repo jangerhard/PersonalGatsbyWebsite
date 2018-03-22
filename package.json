@@ -13,7 +13,8 @@
     "react-particles-js": "^2.1.1",
     "typography-theme-bootstrap": "^0.16.7",
     "typography-theme-fairy-gates": "^0.15.11",
-    "typography-theme-lawton": "^0.15.10"
+    "typography-theme-lawton": "^0.15.10",
+    "react": "latest"
   },
   "keywords": [
     "gatsby"

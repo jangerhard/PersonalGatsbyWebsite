@@ -12,7 +12,7 @@
     stroke-width: 1;
     stroke-dasharray: 150;
     opacity: 10;
-    animation: animate 3s cubic-bezier(.8,.06,.68,.99);
+    animation: animate 4s cubic-bezier(.8,.06,.68,.99);
 }
 
 @keyframes animate {

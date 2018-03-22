@@ -1,28 +1,33 @@
-import React from 'react'
+import React, {Component} from 'react'
 import style from './HeaderComponent.module.css'
 import FlatButton from '../Common/FlatButton';
-import Link, {withPrefix}  from 'gatsby-link';
+import Link, {withPrefix} from 'gatsby-link';
 
-const Header = () => {
+class Header extends Component {
 
-    const isHomePage = window.location.pathname === withPrefix("/");
+    render() {
 
-    return (
+        let isHomePage = false;
+        if (typeof window !== 'undefined' && window.location.pathname)
+            isHomePage = window.location.pathname === withPrefix("/");
 
-        <div className={style.header}>
+        return (
 
-            {!isHomePage && <Link to="/" className={style.homeLogo}/>}
-            {isHomePage && <div className={style.emptyDiv}/>}
+            <div className={style.header}>
 
-            <div className={style.links}>
+                {!isHomePage && <Link to="/" className={style.homeLogo}/>}
+                {isHomePage && <div className={style.emptyDiv}/>}
 
-                <FlatButton to="/sauces/" name="Projects"/>
-                <FlatButton to="/education/" name="Education"/>
-                <FlatButton to="/sauces/" name="Career"/>
+                <div className={style.links}>
 
+                    <FlatButton to="/sauces/" name="Projects"/>
+                    <FlatButton to="/education/" name="Education"/>
+                    <FlatButton to="/sauces/" name="Career"/>
+
+                </div>
             </div>
-        </div>
-    );
-};
+        );
+    }
+}
 
 export default Header

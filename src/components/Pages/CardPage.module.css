@@ -43,12 +43,12 @@
 
 .img {
     width: auto;
-    min-height: 240px;
+    height: 240px;
     max-width: 100%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 600px) {
     .img {
-        height: 240px;
+        height: auto;
     }
 }

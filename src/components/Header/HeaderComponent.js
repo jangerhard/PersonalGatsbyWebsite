@@ -7,9 +7,8 @@ class Header extends Component {
 
     render() {
 
-        let isHomePage = false;
-        if (typeof window !== 'undefined' && window.location.pathname)
-            isHomePage = window.location.pathname === withPrefix("/");
+        const isHomePage = typeof window !== 'undefined'
+            && window.location.pathname === withPrefix("/");
 
         return (
 

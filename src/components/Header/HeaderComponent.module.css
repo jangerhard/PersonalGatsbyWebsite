@@ -16,14 +16,25 @@
     /* Give margins */
     margin: 20px auto;
 
+    animation: fadein 2s;
+    justify-content: flex-start;
+}
+
+.emptyDiv {
+    margin: 20px auto;
 }
 
 .header {
-    padding: 16px;
     width: 100%;
 
     display: flex;
     flex-direction: column;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (min-width : 1025px) {
@@ -31,12 +42,41 @@
         padding: 24px 124px;
         flex-direction: row;
     }
+    .links {
+        width: 94%;
+        min-height: 110px;
+        justify-content: flex-end;
+    }
+    .emptyDiv {
+        width: 70px;
+        height: 70px;
+    }
 }
 
-.links {
-    flex-basis: 92%;
-    max-width: 92%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

@@ -16,10 +16,10 @@ class Header extends Component {
 
                 {console.log("Render header")}
 
-                {isHomePage ? (
-                    <div className={style.emptyDiv}/>
-                ) : (
+                {!isHomePage ? (
                     <Link to="/" className={style.homeLogo}/>
+                ) : (
+                    <div className={style.emptyDiv}/>
                 )}
 
                 <div className={style.links}>

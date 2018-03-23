@@ -24,7 +24,7 @@ class Header extends Component {
 
                 <div className={style.links}>
 
-                    <FlatButton to="/sauces/" name="Projects"/>
+                    <FlatButton to="/projects/" name="Projects"/>
                     <FlatButton to="/education/" name="Education"/>
                     <FlatButton to="/sauces/" name="Career"/>
 

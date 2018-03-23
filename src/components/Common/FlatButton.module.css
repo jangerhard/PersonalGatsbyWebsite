@@ -1,0 +1,9 @@
+.link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 6px 8px;
+    min-width: 88px;
+    text-transform: uppercase;
+    text-align: center;
+}

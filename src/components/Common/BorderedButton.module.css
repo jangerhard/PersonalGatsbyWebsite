@@ -1,0 +1,15 @@
+.text {
+    font-size: 0.8em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    font-weight: bold;
+}
+
+.largeButton {
+    border: 2px solid white;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    min-width: 90px;
+}

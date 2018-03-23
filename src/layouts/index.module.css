@@ -1,0 +1,46 @@
+:root {
+    --main-bg-color: #465E84;
+    --secondary-bg-color: #ADD8E6;
+}
+
+body {
+    min-height: 100vh;
+
+    background: -webkit-linear-gradient(
+            to bottom right,
+            var(--main-bg-color),
+            var(--secondary-bg-color)
+    ) fixed;
+    background: -webkit-gradient(
+            linear,
+            left top,
+            right bottom,
+            var(--main-bg-color),
+            var(--secondary-bg-color)
+    ) fixed;
+    background: -moz-linear-gradient(
+            to bottom right,
+            var(--main-bg-color),
+            var(--secondary-bg-color)
+    ) fixed;
+    background: -ms-linear-gradient(
+            to bottom right,
+            var(--main-bg-color),
+            var(--secondary-bg-color)
+    ) fixed;
+    background: -o-linear-gradient(
+            to bottom right,
+            var(--main-bg-color),
+            var(--secondary-bg-color)
+    ) fixed;
+    background: linear-gradient(
+            to bottom right,
+            var(--main-bg-color),
+            var(--secondary-bg-color)
+    ) fixed;
+}
+
+.pages {
+    max-width: 800px;
+    margin: 12px auto 0;
+}

@@ -1,0 +1,54 @@
+.display1 {
+    font-weight: 400;
+}
+
+.card {
+    color: #484848;
+
+    padding: 32px;
+    background: white;
+    margin: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card_top {
+    display: flex;
+    justify-content: center;
+    -webkit-box-pack: center;
+    text-align: center;
+}
+
+.card_image {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    -webkit-box-pack: center;
+}
+
+.card_info{
+    margin-top: 38px;
+}
+
+.img {
+    width: auto;
+    height: 240px;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .img {
+        height: auto;
+    }
+}

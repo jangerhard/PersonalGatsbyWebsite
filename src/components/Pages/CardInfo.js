@@ -1,7 +1,7 @@
 import React from "react";
-import styles from './CardPage.module.css'
+import styles from './CardInfo.module.css'
 
-const CardPage = ({title, text}) => {
+const CardInfo = ({title, text}) => {
     return (
         <div className={styles.card_info}>
             <h2>{title}</h2>
@@ -10,4 +10,4 @@ const CardPage = ({title, text}) => {
     );
 };
 
-export default CardPage;
+export default CardInfo;

@@ -14,8 +14,6 @@ class Header extends Component {
 
             <div className={style.header}>
 
-                {console.log("Render header")}
-
                 {!isHomePage ? (
                     <Link to="/" className={style.homeLogo}/>
                 ) : (

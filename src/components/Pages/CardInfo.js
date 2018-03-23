@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types'
 import styles from './CardInfo.module.css'
 
 const CardInfo = () => (

@@ -11,7 +11,7 @@ const CardPage = ({ title, imgLink }) => {
 
             <hr />
 
-            {imgLink !== null &&
+            {imgLink &&
             <div className={styles.card_image}>
                 <img className={styles.img}
                      src={imgLink} />

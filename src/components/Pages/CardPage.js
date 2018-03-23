@@ -1,8 +1,7 @@
 import React from "react";
-import CardInfo from "./CardInfo";
 import styles from './CardPage.module.css';
 
-const CardPage = ({ title, imgLink }) => {
+const CardPage = ({ title, imgLink, children }) => {
     return (
         <div className={styles.card}>
             <div className={styles.card_top}>
@@ -17,15 +16,7 @@ const CardPage = ({ title, imgLink }) => {
                      src={imgLink} />
             </div>
             }
-            <CardInfo
-                title="Humble beginnings"
-                text="Nori grape silver beet broccoli kombu beet greens fava
-                    bean potato quandong celery. Bunya nuts black-eyed pea
-                    prairie turnip leek lentil turnip greens parsnip. Sea
-                    lettuce lettuce water chestnut eggplant winter purslane
-                    fennel azuki bean earthnut pea sierra leone bologi leek
-                    soko chicory celtuce parsley jícama salsify."
-            />
+            {children()}
         </div>);
 };
 

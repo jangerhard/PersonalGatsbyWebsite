@@ -1,5 +1,5 @@
 import React from 'react'
-import CardInfo from "../components/Pages/CardInfo";
+import CardInfo from '../components/Pages/CardInfo';
 import CardPage from '../components/Pages/CardPage'
 
 

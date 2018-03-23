@@ -12,7 +12,9 @@ class CardPage extends Component {
                     <h1 className={styles.display1}> {this.props.title}</h1>
                 </div>
 
-                <hr/>
+                {this.props.title && <hr/>}
+
+                {this.props.text}
 
                 {this.props.imgLink &&
                 <div className={styles.card_image}>
@@ -29,6 +31,7 @@ class CardPage extends Component {
 CardPage.propTypes = {
     title: PropTypes.string,
     imgLink: PropTypes.string,
+    text: PropTypes.string,
     cardInfo: PropTypes.instanceOf(CardInfo),
 };
 

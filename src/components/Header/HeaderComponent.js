@@ -14,8 +14,11 @@ class Header extends Component {
 
             <div className={style.header}>
 
-                {!isHomePage && <Link to="/" className={style.homeLogo}/>}
-                {isHomePage && <div className={style.emptyDiv}/>}
+                {isHomePage ? (
+                    <div className={style.emptyDiv}/>
+                ) : (
+                    <Link to="/" className={style.homeLogo}/>
+                )}
 
                 <div className={style.links}>
 

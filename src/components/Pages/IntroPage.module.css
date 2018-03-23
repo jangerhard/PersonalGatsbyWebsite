@@ -33,12 +33,12 @@
     font-weight: 400;
     font-size: 24px;
     text-align: center;
-    animation: fadein 3s;
+    animation: fadein 2s;
 }
 
 .buttons {
 
-    animation: fadein 3s;
+    animation: fadein 2s;
     width: 300px;
     display: flex;
     justify-content: space-between;

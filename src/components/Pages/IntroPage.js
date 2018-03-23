@@ -22,8 +22,8 @@ const IntroPage = () => (
                 name="Github"
             />
             <BorderedButton
-                to="/sauces/"
-                name="Sauces"
+                to="/contact/"
+                name="Contact"
             />
         </div>
     </div>

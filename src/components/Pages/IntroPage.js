@@ -12,6 +12,8 @@ const IntroPage = () => (
 
         <h2>Full Stack Developer based in Oslo, Norway</h2>
 
+        {console.log("Render intro-page")}
+
         <div className={style.buttons}>
             <BorderedButton
                 href="https://www.linkedin.com/in/jangschoepp/"

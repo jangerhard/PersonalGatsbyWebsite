@@ -12,10 +12,57 @@
     stroke-width: 1;
     stroke-dasharray: 150;
     opacity: 10;
-    animation: animate 4s cubic-bezier(.8,.06,.68,.99);
+
+    animation: animate 4s cubic-bezier(.8, .06, .68, .99);
+    -webkit-animation: animate 4s cubic-bezier(.8, .06, .68, .99);
+    -moz-animation: animate 4s cubic-bezier(.8, .06, .68, .99);
+    -o-animation: animate 4s cubic-bezier(.8, .06, .68, .99);
+    -ms-animation: animate 4s cubic-bezier(.8, .06, .68, .99);
 }
 
 @keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 150;
+    }
+    10% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 150;
+    }
+    95% {
+        fill: rgba(255, 255, 255, 0);
+    }
+    100% {
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 150;
+    }
+    10% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 150;
+    }
+    95% {
+        fill: rgba(255, 255, 255, 0);
+    }
+    100% {
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+@-ms-keyframes animate {
     0% {
         opacity: 0;
         fill: none;

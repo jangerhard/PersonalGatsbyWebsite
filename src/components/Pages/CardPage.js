@@ -32,7 +32,7 @@ CardPage.propTypes = {
     title: PropTypes.string,
     imgLink: PropTypes.string,
     text: PropTypes.string,
-    cardInfo: PropTypes.instanceOf(CardInfo),
+    cardInfo: PropTypes.object,
 };
 
 export default CardPage;

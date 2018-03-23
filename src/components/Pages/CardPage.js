@@ -16,7 +16,9 @@ const CardPage = ({ title, imgLink, children }) => {
                      src={imgLink} />
             </div>
             }
-            {children()}
+            <div>
+                {children()}
+            </div>
         </div>);
 };
 

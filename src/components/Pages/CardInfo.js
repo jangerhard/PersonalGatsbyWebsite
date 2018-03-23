@@ -10,8 +10,8 @@ const CardInfo = () => (
 );
 
 CardInfo.propTypes = {
-    title: PropTypes.string,
-    text: PropTypes.string,
+    title: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
 };
 
 export default CardInfo;

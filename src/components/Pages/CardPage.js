@@ -22,9 +22,9 @@ const CardPage = () => (
     </div>);
 
 CardPage.propTypes = {
-    title: PropTypes.string,
+    title: PropTypes.string.isRequired,
     imgLink: PropTypes.string,
-    children: PropTypes.instanceOf(CardInfo),
+    children: PropTypes.instanceOf(CardInfo).isRequired,
 };
 
 

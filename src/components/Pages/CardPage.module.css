@@ -11,7 +11,7 @@
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
-    animation: fadein 3s;
+    animation: fadein 2s;
 }
 
 @keyframes fadein {
@@ -43,12 +43,12 @@
 
 .img {
     width: auto;
-    min-height: 240px;
+    height: 240px;
     max-width: 100%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 600px) {
     .img {
-        height: 240px;
+        height: auto;
     }
 }

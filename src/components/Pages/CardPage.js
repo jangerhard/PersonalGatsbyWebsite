@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './CardPage.module.css';
 
-const CardPage = ({ title, imgLink, children }) => {
+const CardPage = ({ title, imgLink }) => {
     return (
         <div className={styles.card}>
             <div className={styles.card_top}>
@@ -16,9 +16,8 @@ const CardPage = ({ title, imgLink, children }) => {
                      src={imgLink} />
             </div>
             }
-            <div>
-                {children()}
-            </div>
+
+            {this.props.children()}
         </div>);
 };
 

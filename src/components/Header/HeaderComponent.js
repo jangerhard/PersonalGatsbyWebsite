@@ -7,12 +7,14 @@ class Header extends Component {
 
     render() {
 
-        const isHomePage = typeof window !== 'undefined'
+        let isHomePage = typeof window !== 'undefined'
             && window.location.pathname === withPrefix("/");
 
         return (
 
             <div className={style.header}>
+
+                {console.log("Render header")}
 
                 {isHomePage ? (
                     <div className={style.emptyDiv}/>

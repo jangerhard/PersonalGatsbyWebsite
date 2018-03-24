@@ -10,7 +10,7 @@
     stroke-linecap: butt;
     stroke-linejoin: miter;
     stroke-width: 1;
-    stroke-dasharray: 150;
+    stroke-dasharray: 160;
     opacity: 10;
 
     animation: animate 4s cubic-bezier(.8, .06, .68, .99);
@@ -24,12 +24,12 @@
     0% {
         opacity: 0;
         fill: none;
-        stroke-dashoffset: 150;
+        stroke-dashoffset: 160;
     }
     10% {
         opacity: 0;
         fill: none;
-        stroke-dashoffset: 150;
+        stroke-dashoffset: 160;
     }
     95% {
         fill: rgba(255, 255, 255, 0);
@@ -45,12 +45,12 @@
     0% {
         opacity: 0;
         fill: none;
-        stroke-dashoffset: 150;
+        stroke-dashoffset: 160;
     }
     10% {
         opacity: 0;
         fill: none;
-        stroke-dashoffset: 150;
+        stroke-dashoffset: 160;
     }
     95% {
         fill: rgba(255, 255, 255, 0);
@@ -66,12 +66,12 @@
     0% {
         opacity: 0;
         fill: none;
-        stroke-dashoffset: 150;
+        stroke-dashoffset: 160;
     }
     10% {
         opacity: 0;
         fill: none;
-        stroke-dashoffset: 150;
+        stroke-dashoffset: 160;
     }
     95% {
         fill: rgba(255, 255, 255, 0);

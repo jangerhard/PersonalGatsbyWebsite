@@ -1,6 +1,8 @@
 .text {
     font-size: 0.8em;
     -webkit-margin-before: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     -webkit-margin-after: 1em;
     font-weight: bold;
 }

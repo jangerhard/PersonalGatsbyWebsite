@@ -8,7 +8,6 @@ import ParticlesContainer from "../components/Particles/ParticlesContainer";
 
 const TemplateWrapper = ({children}) => (
     <div>
-        <ParticlesContainer/>
         <Helmet
             title="Jan Schøpp's Website"
             meta={[
@@ -21,6 +20,8 @@ const TemplateWrapper = ({children}) => (
             ]}
         />
         <Header/>
+
+        <ParticlesContainer/>
 
         <div className={styles.pages}>
             {children()}

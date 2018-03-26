@@ -3,13 +3,10 @@
     --secondary-bg-color: #ADD8E6;
 }
 
-body {
-    min-height: 100vh;
-
-    background-image: url(/src/images/background.svg);
-}
-
 .pages {
     max-width: 800px;
     margin: 0 auto 0;
+
+    min-height: 100vh;
+    background-image: url(/src/images/background.svg);
 }

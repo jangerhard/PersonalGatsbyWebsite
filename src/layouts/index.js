@@ -9,7 +9,7 @@ import background from '../images/background.svg';
 
 const TemplateWrapper = ({ children }) => (
     <div className="mainSite" style={{
-        backgroundImage: background
+        backgroundImage: 'url($background)'
     }}>
         <Helmet
             title="Jan Schøpp's Website"

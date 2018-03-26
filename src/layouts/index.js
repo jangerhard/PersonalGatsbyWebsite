@@ -5,12 +5,12 @@ import Helmet from 'react-helmet'
 import Header from '../components/Header/HeaderComponent'
 import styles from './index.module.css'
 import ParticlesContainer from "../components/Particles/ParticlesContainer";
-import background from '../images/background.svg';
+import Background from '../images/background.svg';
 
 const TemplateWrapper = ({ children }) => (
-    <div className="mainSite" style={{
-        backgroundImage: background
-    }}>
+    <div>
+        <Background className="mainSite"/>
+
         <Helmet
             title="Jan Schøpp's Website"
             meta={[

@@ -12,6 +12,7 @@
 .mainSite {
     min-height: 100vh;
     background-size: contain;
+    background-repeat: round;
 }
 
 .no-svg .mainSite {

@@ -8,7 +8,7 @@ import ParticlesContainer from "../components/Particles/ParticlesContainer";
 import background from '../images/background.svg';
 
 const TemplateWrapper = ({ children }) => (
-    <div className="mainSite" style={{
+    <div className={styles.mainSite} style={{
         backgroundImage: `url(${background})`
     }}>
         <Helmet

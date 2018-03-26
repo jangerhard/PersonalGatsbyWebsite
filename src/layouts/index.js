@@ -7,7 +7,7 @@ import styles from './index.module.css'
 import ParticlesContainer from "../components/Particles/ParticlesContainer";
 
 const TemplateWrapper = ({children}) => (
-    <div>
+    <div className="mainSite">
         <Helmet
             title="Jan Schøpp's Website"
             meta={[

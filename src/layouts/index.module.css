@@ -9,12 +9,13 @@
 
 }
 
-___gatsby {
+.mainSite {
+    min-height: 100vh;
     background: url(/src/images/background.svg) no-repeat top left;
     background-size: contain;
 }
 
-.no-svg ___gatsby {
+.no-svg .mainSite {
 
     background: -webkit-linear-gradient(
             to bottom right,

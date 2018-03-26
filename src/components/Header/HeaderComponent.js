@@ -14,8 +14,6 @@ class Header extends Component {
 
             <div className={style.header}>
 
-                {console.log("Render header")}
-
                 {!isHomePage ? (
                     <Link to="/" className={style.homeLogo}/>
                 ) : (
@@ -24,7 +22,7 @@ class Header extends Component {
 
                 <div className={style.links}>
 
-                    <FlatButton to="/sauces/" name="Projects"/>
+                    <FlatButton to="/projects/" name="Projects"/>
                     <FlatButton to="/education/" name="Education"/>
                     <FlatButton to="/sauces/" name="Career"/>
 

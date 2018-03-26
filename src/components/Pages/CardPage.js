@@ -1,31 +1,37 @@
-import React from "react";
 import PropTypes from 'prop-types'
+import React, { Component } from "react";
 import styles from './CardPage.module.css';
-import CardInfo from "./CardInfo";
 
-const CardPage = () => (
-    <div className={styles.card}>
-        <div className={styles.card_top}>
-            <h1 className={styles.display1}>{this.props.title}</h1>
-        </div>
+class CardPage extends Component {
 
-        <hr />
+    render() {
+        return (
+            <div className={styles.card}>
+                <div className={styles.card_top}>
+                    <h1 className={styles.display1}> {this.props.title}</h1>
+                </div>
 
-        {this.props.imgLink &&
-        <div className={styles.card_image}>
-            <img className={styles.img}
-                 src={this.props.imgLink} />
-        </div>
-        }
+                {this.props.title && <hr />}
 
-        {this.props.children()}
-    </div>);
+                {this.props.text}
+
+                {this.props.imgLink &&
+                <div className={styles.card_image}>
+                    <img className={styles.img}
+                         src={this.props.imgLink} />
+                </div>
+                }
+
+                {this.props.cardInfo}
+            </div>);
+    }
+}
 
 CardPage.propTypes = {
     title: PropTypes.string.isRequired,
     imgLink: PropTypes.string,
-    children: PropTypes.instanceOf(CardInfo).isRequired,
+    text: PropTypes.string,
+    cardInfo: PropTypes.object,
 };
-
 
 export default CardPage;

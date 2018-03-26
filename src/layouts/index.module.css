@@ -6,41 +6,10 @@
 body {
     min-height: 100vh;
 
-    background: -webkit-linear-gradient(
-            to bottom right,
-            var(--main-bg-color),
-            var(--secondary-bg-color)
-    ) fixed;
-    background: -webkit-gradient(
-            linear,
-            left top,
-            right bottom,
-            var(--main-bg-color),
-            var(--secondary-bg-color)
-    ) fixed;
-    background: -moz-linear-gradient(
-            to bottom right,
-            var(--main-bg-color),
-            var(--secondary-bg-color)
-    ) fixed;
-    background: -ms-linear-gradient(
-            to bottom right,
-            var(--main-bg-color),
-            var(--secondary-bg-color)
-    ) fixed;
-    background: -o-linear-gradient(
-            to bottom right,
-            var(--main-bg-color),
-            var(--secondary-bg-color)
-    ) fixed;
-    background: linear-gradient(
-            to bottom right,
-            var(--main-bg-color),
-            var(--secondary-bg-color)
-    ) fixed;
+    background-image: url(/src/images/background.svg);
 }
 
 .pages {
     max-width: 800px;
-    margin: 12px auto 0;
+    margin: 0 auto 0;
 }

@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/Header/HeaderComponent'
 import styles from './index.module.css'
-import ParticlesContainer from "../components/Particles/ParticlesContainer";
 import background from '../images/background.svg';
 
 const TemplateWrapper = ({ children }) => (
@@ -23,8 +22,6 @@ const TemplateWrapper = ({ children }) => (
             ]}
         />
         <Header />
-
-        <ParticlesContainer />
 
         <div className={styles.pages}>
             {children()}

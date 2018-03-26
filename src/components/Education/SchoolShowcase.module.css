@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    background: #dbddec;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+
+    margin: 0 2rem;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.container hr {
+    max-width: 150px;
+    height: 2px;
+    margin: 10px auto;
+    background: #C0C0C0;
+}
+
+.uniLogo {
+
+    /* make a square container */
+    width: 150px;
+    height: 150px;
+
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+
+    /* center the image vertically and horizontally */
+    background-position: top center;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+
+    padding: 15px;
+}
+
+.uniName {
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.uniInfo {
+    font-size: 1em;
+}
+
+.infoWrapper {
+    text-align: center;
+    font-size: 100%;
+    padding-bottom: 1em;
+}
+
+.container:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.month {
+    font-size: 11px;
+}
+
+.date {
+    background-color: #fff;
+    font-weight: 800;
+    min-width: 48px;
+    padding: 10px 0;
+    position: absolute;
+    right: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.date span {
+    display: block;
+    line-height: 14px;
+}
+
+

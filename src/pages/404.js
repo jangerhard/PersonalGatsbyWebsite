@@ -1,5 +1,5 @@
 import React from 'react'
-import CardPage from "../components/Pages/CardPage";
+import CardPage from "../components/Common/CardPage";
 
 const NotFoundPage = () => (
   <CardPage

@@ -15,15 +15,11 @@ const IntroPage = () => (
         <div className={style.buttons}>
             <BorderedButton
                 href="https://www.linkedin.com/in/jangschoepp/"
-                name="Linkedin"
+                name="Career"
             />
             <BorderedButton
                 href="https://github.com/jangerhard"
-                name="Github"
-            />
-            <BorderedButton
-                to="/contact/"
-                name="Contact"
+                name="Code"
             />
         </div>
     </div>

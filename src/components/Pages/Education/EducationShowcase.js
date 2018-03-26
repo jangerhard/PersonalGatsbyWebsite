@@ -1,9 +1,9 @@
 import React from "react";
 import styles from './EducationShowcase.module.css'
 import SchoolShowcase from "./SchoolShowcase";
-import paceLogo from "../../images/pace_logo.jpg";
-import uisLogo from "../../images/uis_logo.png";
-import polyULogo from "../../images/polyu_logo.png";
+import paceLogo from "../../../images/pace_logo.jpg";
+import uisLogo from "../../../images/uis_logo.png";
+import polyULogo from "../../../images/polyu_logo.png";
 
 class EducationShowcase extends React.Component {
     render() {

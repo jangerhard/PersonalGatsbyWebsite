@@ -1,6 +1,6 @@
 import React from 'react'
-import CardInfo from '../components/Pages/CardInfo';
-import CardPage from '../components/Pages/CardPage'
+import CardInfo from '../components/Common/CardInfo';
+import CardPage from '../components/Common/CardPage'
 
 export default () => (
 

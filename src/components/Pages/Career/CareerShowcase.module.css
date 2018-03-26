@@ -1,0 +1,11 @@
+.page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .page {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

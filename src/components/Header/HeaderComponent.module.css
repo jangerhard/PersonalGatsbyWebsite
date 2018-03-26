@@ -37,7 +37,7 @@
     justify-content: center;
 }
 
-@media screen and (min-width : 1025px) {
+@media screen and (min-width: 1024px) {
     .header {
         padding: 0 244px;
         flex-direction: row;

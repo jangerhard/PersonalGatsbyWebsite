@@ -29,7 +29,7 @@
     color: #F0F8FF;
 }
 
-@media screen and (min-width : 1025px) {
+@media screen and (min-width : 1024px) {
     .layout {
         padding-top: 0;
     }
@@ -47,7 +47,7 @@
 
     width: 300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
     animation: fadein 2s;
     -webkit-animation: fadein 2s;

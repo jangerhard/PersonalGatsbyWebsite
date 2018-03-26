@@ -1,5 +1,5 @@
 import React from 'react'
-import EducationShowcase from "../components/Education/EducationShowcase";
+import EducationShowcase from "../components/Pages/Education/EducationShowcase";
 
 export default () => (
 

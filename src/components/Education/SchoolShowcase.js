@@ -7,25 +7,32 @@ class SchoolShowcase extends React.Component {
         return (
             <div className={styles.container}>
                 <div className={styles.date}>
-                    <span className={styles.year}>2017</span>
-                    <span className={styles.month}>May</span>
+                    <span className={styles.year}>{this.props.year}</span>
+                    <span className={styles.month}>{this.props.month}</span>
                 </div>
                 <img className={styles.uniLogo}
                      src="https://pbs.twimg.com/profile_images/849397355103358979/iykBuncN_400x400.jpg"/>
                 <div className={styles.infoWrapper}>
-                    <div className={styles.uniName}>Pace University, Longer
-                        Title
+                    <div className={styles.uniName}>
+                        {this.props.name}
                     </div>
                     <hr/>
-                    <div className={styles.uniInfo}>Master of Computer Science
-                    </div>
-                    <div className={styles.uniGPA}>GPA: 3.86</div>
+                    <div className={styles.uniInfo}>{this.props.title}</div>
+                    {this.props.gpa &&
+                    <div className={styles.uniGPA}>GPA: {this.props.gpa}</div>}
                 </div>
             </div>
         )
     }
 }
 
-SchoolShowcase.propTypes = {};
+SchoolShowcase.propTypes = {
+    name: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    year: PropTypes.number.isRequired,
+    month: PropTypes.string,
+    gpa: PropTypes.string,
+    imgSrc: PropTypes.string
+};
 
 export default SchoolShowcase;

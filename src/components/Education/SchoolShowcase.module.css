@@ -5,23 +5,29 @@
     border-radius: 5px;
     align-items: center;
 
-    max-width: 600px;
-
-    margin: 0 1.6rem;
     padding: 0 1em 1em;
     position: relative;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-@media screen and (min-width: 645px){
+@media screen and (min-width: 595px){
     .container {
         display: grid;
         justify-content: center;
         grid-template-columns: 1fr 2fr 0.25fr;
         padding-top: 1em;
+        max-width: 600px;
     }
     .date {
         top: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 

@@ -11,7 +11,6 @@
 
 .mainSite {
     min-height: 100vh;
-    background: url(/src/images/background.svg) no-repeat top left;
     background-size: contain;
 }
 

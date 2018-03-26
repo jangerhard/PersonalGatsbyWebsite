@@ -11,7 +11,7 @@ class SchoolShowcase extends React.Component {
                     <span className={styles.month}>{this.props.month}</span>
                 </div>
                 <img className={styles.uniLogo}
-                     src="https://pbs.twimg.com/profile_images/849397355103358979/iykBuncN_400x400.jpg"/>
+                     src={this.props.imgSrc}/>
                 <div className={styles.infoWrapper}>
                     <div className={styles.uniName}>
                         {this.props.name}
@@ -32,7 +32,7 @@ SchoolShowcase.propTypes = {
     year: PropTypes.number.isRequired,
     month: PropTypes.string,
     gpa: PropTypes.string,
-    imgSrc: PropTypes.string
+    imgSrc: PropTypes.object
 };
 
 export default SchoolShowcase;

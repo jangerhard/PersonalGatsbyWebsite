@@ -1,14 +1,21 @@
 .page {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
+    display: flex;
+    flex-direction: column;
     padding: 2em;
     animation: fadein 2s;
 }
 
-@media screen and (min-width: 1024px) {
+@supports (display: grid) {
     .page {
-        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        .page {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 }
 

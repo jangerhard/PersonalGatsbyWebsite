@@ -12,7 +12,7 @@ class ContactPage extends React.Component {
                     cardInfo={
                         <div className={styles.info}>
                             <CardInfo title={"Gmail"} text={"jgschoepp"}/>
-                            <CardInfo title={"Call me"}
+                            <CardInfo title={"Call my cell"}
                                       text={"+47 480 20 857"}/>
                         </div>
                     }>

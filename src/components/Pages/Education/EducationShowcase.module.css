@@ -3,10 +3,20 @@
     grid-template-columns: 1fr;
     grid-gap: 20px;
     padding: 2em;
+    animation: fadein 2s;
 }
 
 @media screen and (min-width: 1024px) {
     .page {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

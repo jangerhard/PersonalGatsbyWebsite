@@ -17,7 +17,7 @@ class Header extends Component {
 
                 {!isHomePage ? (
                     <Link to="/">
-                        <MainLogo size={100}/>
+                        <MainLogo size={75}/>
                     </Link>
                 ) : (
                     <div className={style.emptyDiv}/>

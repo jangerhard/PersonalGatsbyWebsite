@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import style from './HeaderComponent.module.css'
 import FlatButton from '../Common/FlatButton';
 import Link, {withPrefix} from 'gatsby-link';
+import MainLogo from "../Common/MainLogo";
 
 class Header extends Component {
 
@@ -15,7 +16,9 @@ class Header extends Component {
             <div className={style.header}>
 
                 {!isHomePage ? (
-                    <Link to="/" className={style.homeLogo}/>
+                    <Link to="/">
+                        <MainLogo size={100}/>
+                    </Link>
                 ) : (
                     <div className={style.emptyDiv}/>
                 )}

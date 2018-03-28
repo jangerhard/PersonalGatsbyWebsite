@@ -1,25 +1,3 @@
-.homeLogo {
-
-    /* avatar */
-    background-image: url('https://en.gravatar.com/userimage/128548950/67457155631d006e64b3d7c809164997.png?size=100');
-
-    /* make a square container */
-    width: 70px;
-    height: 70px;
-
-    /* fill the container, preserving aspect ratio, and cropping to fit */
-    background-size: cover;
-
-    /* round the edges to a circle with border radius 1/2 container size */
-    border-radius: 50%;
-
-    /* Give margins */
-    margin: 20px auto;
-
-    animation: fadein 2s;
-    justify-content: flex-start;
-}
-
 .emptyDiv {
     margin: 20px auto;
 }

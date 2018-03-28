@@ -5,7 +5,10 @@ import style from './MainLogo.module.css'
 class MainLogo extends React.Component {
     render() {
         return (
-            <div className={`${style.logoCircle} mainLogo`} width={this.props.size} height={this.props.size} />
+            <div className={`${style.logoCircle} mainLogo`} style={{
+                width: this.props.size,
+                height: this.props.size
+            }} />
         )
     }
 }

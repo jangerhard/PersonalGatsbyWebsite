@@ -30,6 +30,16 @@ class ProjectPage extends React.Component {
                         location={"Helsinki, Finland"}
                         shortDesc={"Test test test"}
                     />
+                    <ProjectShowcase
+                        title={"WalletWatcher"}
+                        tools={"Java (Android)"}
+                        shortDesc={"Test test test"}
+                    />
+                    <ProjectShowcase
+                        title={"NeedTutor"}
+                        tools={"Java (Android)"}
+                        shortDesc={"Test test test"}
+                    />
                 </div>
             </div>
         )

@@ -1,21 +1,19 @@
 .page {
     display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: flex;
     flex-direction: column;
     animation: fadein 2s;
-    align-items: center;
 }
 
 @supports (display: grid) {
-    .page {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-        align-items: center;
-        justify-items: center;
-    }
 
     @media screen and (min-width: 1024px) {
-        .page {
+        .grid {
+            display: grid;
             grid-template-columns: 1fr 1fr 1fr;
         }
     }

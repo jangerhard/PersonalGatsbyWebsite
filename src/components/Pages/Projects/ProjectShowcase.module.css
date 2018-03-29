@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+:hover .container{
+    opacity: 1;
+    bottom: 120px;
+}
+
+:hover .color-overlay{
+    background: rgba(84, 104, 110, 0.8);
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    color: #465E84;
+}
+
+.break {
+    width: 50px;
+    height: 3px;
+    margin: 20px auto;
+    background: #e2db21;
+}
+
+.tools {
+    color: #465E84;
+    font-size: 16px;
+    font-style: italic;
+    padding-bottom: 120px;
+}
+
+.backInfo {
+    bottom: 100px;
+    color: #DCE3E7;
+    line-height: 24px;
+    z-index: 20;
+    opacity: 0;
+    transition: bottom .3s, opacity .3s cubic-bezier(.33, .66, .66, 1);
+}
+
+.location {
+    list-style-type: none;
+    position: relative;
+    text-align: start;
+    left: 0;
+}

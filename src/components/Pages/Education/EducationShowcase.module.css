@@ -1,7 +1,6 @@
 .page {
     display: flex;
     flex-direction: column;
-    padding: 2em;
     animation: fadein 2s;
 }
 

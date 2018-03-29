@@ -8,7 +8,7 @@
 }
 
 .pages {
-    display: flex;
+    padding: 20px 50px;
     max-width: 800px;
     margin: 0 auto 0;
     justify-content: center;

@@ -2,12 +2,12 @@
     display: flex;
     background: #F0F8FF;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 10px;
     align-items: center;
 
     padding: 0 1em 1em;
     position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 @media screen and (min-width: 600px){

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import React, { Component } from "react";
+import React, {Component} from "react";
 import styles from './CardPage.module.css';
 
 class CardPage extends Component {
@@ -7,31 +7,30 @@ class CardPage extends Component {
     render() {
         return (
             <div className={styles.card}>
+                {this.props.title &&
                 <div className={styles.card_top}>
                     <h1 className={styles.display1}> {this.props.title}</h1>
+                    <hr/>
                 </div>
-
-                {this.props.title && <hr />}
+                }
 
                 {this.props.text}
 
                 {this.props.imgLink &&
                 <div className={styles.card_image}>
                     <img className={styles.img}
-                         src={this.props.imgLink} />
+                         src={this.props.imgLink}/>
                 </div>
                 }
-
-                {this.props.cardInfo}
+                {this.props.children}
             </div>);
     }
 }
 
 CardPage.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     imgLink: PropTypes.string,
-    text: PropTypes.string,
-    cardInfo: PropTypes.object,
+    text: PropTypes.string
 };
 
 export default CardPage;

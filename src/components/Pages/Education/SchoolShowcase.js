@@ -35,8 +35,8 @@ SchoolShowcase.propTypes = {
     location: PropTypes.string.isRequired,
     year: PropTypes.number.isRequired,
     month: PropTypes.string,
-    gpa: PropTypes.string,
-    imgSrc: PropTypes.object
+    gpa: PropTypes.number,
+    imgSrc: PropTypes.string
 };
 
 export default SchoolShowcase;

@@ -4,6 +4,7 @@
     flex-direction: column;
     border-radius: 10px;
     align-items: center;
+    margin: 0.5em;
 
     padding: 0 1em 1em;
     position: relative;

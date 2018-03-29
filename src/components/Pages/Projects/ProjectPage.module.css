@@ -3,6 +3,21 @@
     flex-direction: column;
     align-items: center;
 }
-.projects * {
-    margin-bottom: 20px;
+
+@supports (display: grid) {
+    @media screen and (min-width: 800px) {
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@supports (display: grid) {
+    @media screen and (min-width: 1024px) {
+        .projects {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+    }
 }

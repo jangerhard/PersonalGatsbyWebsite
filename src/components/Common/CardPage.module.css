@@ -3,8 +3,9 @@
 }
 
 .card {
+    margin: 10px;
     min-width: 200px;
-    width: 100%;
+    width: 80%;
     padding: 32px;
     background: #F0F8FF;
     border-radius: 10px;

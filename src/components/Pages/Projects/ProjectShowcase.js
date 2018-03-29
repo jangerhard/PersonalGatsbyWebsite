@@ -13,16 +13,12 @@ class ProjectShowcase extends React.Component {
                     <div className={styles.tools}>
                         {this.props.tools}
                     </div>
-                    <div className={styles.backInfo}>
-                        {this.props.shortDesc}
-                    </div>
+
                     {this.props.location &&
                     <div className={styles.location}>
                         {this.props.location}
                     </div>
                     }
-                    <div className={styles["gradient-overlay"]}/>
-                    <div className={styles["color-overlay"]}/>
                 </div>
             </CardPage>
         )

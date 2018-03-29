@@ -12,6 +12,7 @@ class EducationShowcase extends React.Component {
                 <SchoolShowcase
                     name={"Pace University"}
                     title={"Master of Computer Science"}
+                    location={"New York City, USA"}
                     gpa={3.86}
                     imgSrc={paceLogo}
                     year={2017}
@@ -20,12 +21,14 @@ class EducationShowcase extends React.Component {
                 <SchoolShowcase
                     name={"Hong Kong Polytechnic University"}
                     title={"Exchange Year"}
+                    location={"Hung Hom, Hong Kong"}
                     imgSrc={polyULogo}
                     year={2013}
                 />
                 <SchoolShowcase
                     name={"University of Stavanger"}
                     title={"Bachelor of Computer Engineering"}
+                    location={"Stavanger, Norway"}
                     imgSrc={uisLogo}
                     year={2014}
                     month={"May"}

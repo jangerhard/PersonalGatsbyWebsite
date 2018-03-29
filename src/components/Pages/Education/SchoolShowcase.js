@@ -16,6 +16,9 @@ class SchoolShowcase extends React.Component {
                     <div className={styles.uniName}>
                         {this.props.name}
                     </div>
+                    <div className={styles.uniLocation}>
+                        {this.props.location}
+                    </div>
                     <hr/>
                     <div className={styles.uniInfo}>{this.props.title}</div>
                     {this.props.gpa &&
@@ -29,6 +32,7 @@ class SchoolShowcase extends React.Component {
 SchoolShowcase.propTypes = {
     name: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
     year: PropTypes.number.isRequired,
     month: PropTypes.string,
     gpa: PropTypes.string,

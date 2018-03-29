@@ -60,6 +60,10 @@
     margin-bottom: 0;
 }
 
+.uniLocation {
+    font-weight: 300;
+}
+
 .uniName {
     font-weight: 300;
     font-size: 1.5em;

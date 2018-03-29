@@ -1,0 +1,17 @@
+.text {
+    font-size: 0.8em;
+    -webkit-margin-before: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    -webkit-margin-after: 1em;
+    font-weight: bold;
+}
+
+.largeButton {
+    border: 2px solid #DCE3E7;
+    color: #DCE3E7;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 10px;
+    min-width: 90px;
+}

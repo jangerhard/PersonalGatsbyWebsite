@@ -1,0 +1,7 @@
+.background {
+    min-height: 100vh;
+    background-color: #add8e6;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}

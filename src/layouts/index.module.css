@@ -1,0 +1,25 @@
+:root {
+    --main-bg-color: #465E84;
+    --secondary-bg-color: #ADD8E6;
+}
+
+:global(.mainLogo){
+    background-image: url('https://en.gravatar.com/userimage/128548950/67457155631d006e64b3d7c809164997.png?size=200');
+}
+
+.pages {
+    padding: 20px 50px;
+    max-width: 1250px;
+    margin: 0 auto 0;
+}
+
+.no-svg .mainSite {
+
+    min-height: 100vh;
+    height: 100%;
+    background: -webkit-linear-gradient(
+            to bottom right,
+            var(--main-bg-color),
+            var(--secondary-bg-color)
+    ) fixed;
+}

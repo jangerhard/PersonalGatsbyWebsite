@@ -1,0 +1,60 @@
+.emptyDiv {
+    margin: 20px auto;
+}
+
+.header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        padding: 0 244px;
+        flex-direction: row;
+    }
+    .links {
+        width: 94%;
+        min-height: 110px;
+        justify-content: flex-end;
+    }
+    .emptyDiv {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,7 +1,20 @@
 import Typography from "typography";
-import lawtonTheme from "typography-theme-lawton";
-// import bootstrapTheme from "typography-theme-bootstrap";
 
-// const typography = new Typography({ baseFontSize: "18px" });
-const typography = new Typography(lawtonTheme);
+const typography = new Typography({
+    googleFonts: [
+        {
+            name: 'Josefin Sans',
+            styles: [
+                '300',
+                '400',
+            ],
+        },
+    ],
+    baseFontSize: '18px',
+    baseLineHeight: 1.666,
+    headerFontFamily: ['Josefin Sans', 'sans-serif'],
+    bodyFontFamily: ['Josefin Sans', 'serif'],
+
+});
+
 export default typography;

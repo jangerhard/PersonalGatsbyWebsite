@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 250px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    color: #465E84;
+}
+
+.break {
+    width: 50px;
+    height: 3px;
+    margin: 20px auto;
+    background: #e2db21;
+}
+
+.tools {
+    color: #465E84;
+    font-size: 16px;
+    font-style: italic;
+    padding-bottom: 120px;
+}
+
+.location {
+    list-style-type: none;
+    text-align: start;
+    padding-bottom: 0;
+    left: 0;
+    bottom: 0;
+}

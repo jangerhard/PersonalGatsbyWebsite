@@ -1,10 +1,11 @@
 import React from 'react'
+import CardPage from "../components/Common/CardPage";
 
 const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
-)
+  <CardPage
+      imgLink={"https://upload.wikimedia.org/wikipedia/commons/0/0d/Tumbeasts_sign1.png"}
+      text={"You just hit a route that doesn't exist... the sadness."}
+  />
+);
 
 export default NotFoundPage

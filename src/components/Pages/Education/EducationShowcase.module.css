@@ -1,0 +1,29 @@
+.page {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    animation: fadein 2s;
+}
+
+@supports (display: grid) {
+
+    @media screen and (min-width: 1024px) {
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

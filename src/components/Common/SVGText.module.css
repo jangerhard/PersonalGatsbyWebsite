@@ -1,0 +1,81 @@
+.svg {
+    height: 60px;
+    width: 300px;
+}
+
+.text {
+    fill: #F0F8FF;
+    font-size: 50px;
+    font-weight: 300;
+    stroke: #F0F8FF;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-width: 1;
+    stroke-dasharray: 160;
+    opacity: 10;
+
+    animation: animate 4s cubic-bezier(.8, .06, .68, .99);
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 160;
+    }
+    10% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 160;
+    }
+    95% {
+        fill: rgba(255, 255, 255, 0);
+    }
+    100% {
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 160;
+    }
+    10% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 160;
+    }
+    95% {
+        fill: rgba(255, 255, 255, 0);
+    }
+    100% {
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+@-ms-keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 160;
+    }
+    10% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 160;
+    }
+    95% {
+        fill: rgba(255, 255, 255, 0);
+    }
+    100% {
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}

@@ -10,6 +10,14 @@ module.exports = {
                 pathToConfigModule: `src/utils/typography.js`,
             },
         },
-        `gatsby-plugin-netlify`
+        {
+            resolve: `gatsby-plugin-netlify`,
+            options: {
+                mergeSecurityHeaders: true, // boolean to turn off the default security headers
+                mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
+                mergeCachingHeaders: true, // boolean to turn off the default caching headers
+                generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
+            },
+        },
     ],
 };

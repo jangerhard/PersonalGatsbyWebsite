@@ -1,0 +1,71 @@
+.layout {
+    max-width: 100%;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F0F8FF;
+}
+
+@media screen and (min-width : 1024px) {
+    .layout {
+        padding-top: 0;
+    }
+}
+
+.layout h2 {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    margin-bottom: 10px;
+}
+
+.buttons {
+
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    -ms-animation : fadein 2s;
+}
+
+@supports (justify-content: space-evenly) {
+    .buttons {
+        justify-content: space-evenly;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,19 @@
+.page {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 450px) {
+    @supports (display: grid){
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+        }
+    }
+}

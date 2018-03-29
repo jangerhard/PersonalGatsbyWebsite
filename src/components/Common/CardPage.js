@@ -8,11 +8,13 @@ class CardPage extends Component {
         return (
             <div className={styles.card}
                  style={{
-                     maxWidth: this.props.maxWidth
+                     width: this.props.width
                  }}>
                 {this.props.title &&
-                <div className={styles.card_top}>
-                    <h1 className={styles.display1}> {this.props.title}</h1>
+                <div>
+                    <div className={styles.card_top}>
+                        <h1 className={styles.display1}> {this.props.title}</h1>
+                    </div>
                     <hr/>
                 </div>
                 }
@@ -34,7 +36,7 @@ CardPage.propTypes = {
     title: PropTypes.string,
     imgLink: PropTypes.string,
     text: PropTypes.string,
-    maxWidth: PropTypes.number,
+    width: PropTypes.number,
     secretText: PropTypes.string
 };
 

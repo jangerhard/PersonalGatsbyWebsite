@@ -6,7 +6,7 @@ import CardPage from "../../Common/CardPage";
 class ProjectShowcase extends React.Component {
     render() {
         return (
-            <CardPage maxWidth={325}>
+            <CardPage width={325}>
                 <div className={styles.container}>
                     <h3 className={styles.title}>{this.props.title}</h3>
                     <hr className={styles.break}/>

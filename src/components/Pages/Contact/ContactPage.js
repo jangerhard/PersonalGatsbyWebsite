@@ -7,7 +7,7 @@ class ContactPage extends React.Component {
     render() {
         return (
             <div className={styles.page}>
-                <CardPage title={"Get in touch!"}>
+                <CardPage title={"Get in touch!"} width={800}>
                     <div className={styles.info}>
                         <CardInfo title={"Gmail"} text={"jgschoepp"}/>
                         <CardInfo title={"Call my cell"}

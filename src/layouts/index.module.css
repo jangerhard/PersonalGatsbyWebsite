@@ -14,14 +14,10 @@
     justify-content: center;
 }
 
-.mainSite {
-    min-height: 100vh;
-    height: 100%;
-    background-repeat: round;
-}
-
 .no-svg .mainSite {
 
+    min-height: 100vh;
+    height: 100%;
     background: -webkit-linear-gradient(
             to bottom right,
             var(--main-bg-color),

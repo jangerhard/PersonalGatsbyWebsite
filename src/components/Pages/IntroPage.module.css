@@ -20,19 +20,26 @@
     text-align: center;
     animation: fadein 2s;
     -webkit-animation: fadein 2s;
+    margin-bottom: 10px;
 }
 
 .buttons {
 
     width: 300px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
     animation: fadein 2s;
     -webkit-animation: fadein 2s;
     -moz-animation: fadein 2s;
     -o-animation: fadein 2s;
     -ms-animation : fadein 2s;
+}
+
+@supports (justify-content: space-evenly) {
+    .buttons {
+        justify-content: space-evenly;
+    }
 }
 
 /* Safari, Chrome and Opera > 12.1 */

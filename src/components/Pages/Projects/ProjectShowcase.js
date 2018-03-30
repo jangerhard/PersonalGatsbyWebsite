@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from 'prop-types'
 import styles from './ProjectShowcase.module.css'
 import CardPage from "../../Common/CardPage";
+import GithubIcon from 'react-icons/lib/fa/github'
+import InfoIcon from 'react-icons/lib/fa/info-circle'
 
 class ProjectShowcase extends React.Component {
     render() {
@@ -19,6 +21,20 @@ class ProjectShowcase extends React.Component {
                         {this.props.location}
                     </div>
                     }
+
+
+                    <div className={styles.icons}>
+                        {this.props.code &&
+                        <a href={this.props.code}>
+                            <GithubIcon/>
+                        </a>
+                        }
+                        {this.props.url &&
+                        <a href={this.props.url}>
+                            <InfoIcon/>
+                        </a>
+                        }
+                    </div>
                 </div>
             </CardPage>
         )
@@ -29,7 +45,9 @@ ProjectShowcase.propTypes = {
     title: PropTypes.string.isRequired,
     tools: PropTypes.string.isRequired,
     shortDesc: PropTypes.string.isRequired,
-    location: PropTypes.string
+    location: PropTypes.string,
+    url: PropTypes.string,
+    code: PropTypes.string,
 };
 
 export default ProjectShowcase;

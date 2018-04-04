@@ -13,14 +13,15 @@ class ProjectPage extends React.Component {
                         shortDesc={"Test test test"}
                         image={""}
                         url={"https://test.no"}
-                        code={"https://github.com/jangerhard/PersonalGatsbyWebsite/blob/master/README.md"}
+                        code={"https://github.com/jangerhard/PersonalGatsbyWebsite"}
                     />
                     <ProjectShowcase
                         title={"WalletWatcher"}
                         tools={"Java (Android)"}
                         shortDesc={"Test test test"}
                         image={""}
-                        url={"https://test.no"}
+                        url={"https://play.google.com/store/apps/details?id=io.github.jangerhard.BitcoinWalletTracker"}
+                        code={"https://github.com/jangerhard/BitcoinWalletTracker"}
                     />
                     <ProjectShowcase
                         title={"QuizMaster"}
@@ -28,7 +29,8 @@ class ProjectPage extends React.Component {
                         location={"New York City, USA"}
                         shortDesc={"Test test test"}
                         image={""}
-                        url={"https://test.no"}
+                        url={"http://jangerhard-node.herokuapp.com/twiliopart2"}
+                        code={"https://github.com/jangerhard/TwilioEducation"}
                     />
                     <ProjectShowcase
                         title={"Appdock"}
@@ -36,7 +38,7 @@ class ProjectPage extends React.Component {
                         location={"New York City, USA"}
                         shortDesc={"Test test test"}
                         image={""}
-                        url={"https://test.no"}
+                        url={"http://mobilesenegal.org/appdock/"}
                     />
                     <ProjectShowcase
                         title={"NOMO3D: The Arc"}
@@ -44,14 +46,15 @@ class ProjectPage extends React.Component {
                         location={"Helsinki, Finland"}
                         shortDesc={"Test test test"}
                         image={""}
-                        url={"https://test.no"}
+                        url={"http://nomo3d.com/"}
                     />
                     <ProjectShowcase
                         title={"NeedTutor"}
                         tools={"Java (Android)"}
                         shortDesc={"Test test test"}
                         image={""}
-                        url={"https://test.no"}
+                        url={"https://play.google.com/store/apps/details?id=com.pacemobilelab.TutorsAtSeidenberg&hl=en"}
+                        code={"https://github.com/paceuniversity/pacemobilelab/tree/master/Tutor"}
                     />
                 </div>
             </div>

@@ -6,7 +6,7 @@ import wallWatchPic from "../../../images/WalletWatcher.png";
 import quizMasterPic from "../../../images/quizMasterSmall.png";
 import TutorsPic from "../../../images/TutorsScreenshot.png";
 import appdockPic from "../../../images/appdock.png";
-import ArcPic from "../../../images/arc.jpg";
+import ArcPic from "../../../images/arc2.jpg";
 
 class ProjectPage extends React.Component {
     render() {

@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types'
 import styles from './ProjectShowcase.module.css'
-import CardPage from "../../Common/CardPage";
 import GithubIcon from 'react-icons/lib/fa/github'
 import InfoIcon from 'react-icons/lib/fa/info-circle'
 

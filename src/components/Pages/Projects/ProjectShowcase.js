@@ -25,12 +25,12 @@ class ProjectShowcase extends React.Component {
 
                     <div className={styles.icons}>
                         {this.props.code &&
-                        <a href={this.props.code}>
+                        <a className={styles.button} href={this.props.code}>
                             <GithubIcon/>
                         </a>
                         }
                         {this.props.url &&
-                        <a href={this.props.url}>
+                        <a className={styles.button} href={this.props.url}>
                             <InfoIcon/>
                         </a>
                         }

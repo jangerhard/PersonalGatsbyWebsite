@@ -35,7 +35,18 @@
     bottom: 0;
 }
 
+.button {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
 .icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+}
+
+@supports (justify-content: space-evenly) {
+    .icons {
+        justify-content: space-evenly;
+    }
 }

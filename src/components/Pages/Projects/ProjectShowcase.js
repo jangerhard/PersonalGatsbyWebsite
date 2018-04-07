@@ -16,13 +16,10 @@ class ProjectShowcase extends React.Component {
                         {this.props.tools}
                     </div>
 
-                    {this.props.location &&
-                    <div className={styles.location}>
-                        {this.props.location}
-                    </div>
+                    {this.props.image &&
+                    <img className={styles.image} src={this.props.image}/>
                     }
-
-
+                    {false &&
                     <div className={styles.icons}>
                         {this.props.code &&
                         <a className={styles.button} href={this.props.code}>
@@ -35,6 +32,7 @@ class ProjectShowcase extends React.Component {
                         </a>
                         }
                     </div>
+                    }
                 </div>
             </CardPage>
         )
@@ -48,6 +46,7 @@ ProjectShowcase.propTypes = {
     location: PropTypes.string,
     url: PropTypes.string,
     code: PropTypes.string,
+    image: PropTypes.string
 };
 
 export default ProjectShowcase;

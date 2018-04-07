@@ -8,33 +8,31 @@ import InfoIcon from 'react-icons/lib/fa/info-circle'
 class ProjectShowcase extends React.Component {
     render() {
         return (
-            <CardPage width={325}>
-                <div className={styles.container}>
-                    <h3 className={styles.title}>{this.props.title}</h3>
-                    <hr className={styles.break}/>
-                    <div className={styles.tools}>
-                        {this.props.tools}
-                    </div>
+            <div className={styles.container}>
+                <h3 className={styles.title}>{this.props.title}</h3>
+                <hr className={styles.break}/>
+                <div className={styles.tools}>
+                    {this.props.tools}
+                </div>
 
-                    {this.props.image &&
-                    <img className={styles.image} src={this.props.image}/>
+                {this.props.image &&
+                <img className={styles.image} src={this.props.image}/>
+                }
+                {false &&
+                <div className={styles.icons}>
+                    {this.props.code &&
+                    <a className={styles.button} href={this.props.code}>
+                        <GithubIcon/>
+                    </a>
                     }
-                    {false &&
-                    <div className={styles.icons}>
-                        {this.props.code &&
-                        <a className={styles.button} href={this.props.code}>
-                            <GithubIcon/>
-                        </a>
-                        }
-                        {this.props.url &&
-                        <a className={styles.button} href={this.props.url}>
-                            <InfoIcon/>
-                        </a>
-                        }
-                    </div>
+                    {this.props.url &&
+                    <a className={styles.button} href={this.props.url}>
+                        <InfoIcon/>
+                    </a>
                     }
                 </div>
-            </CardPage>
+                }
+            </div>
         )
     }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import style from './IntroPage.module.css';
 import BorderedButton from '../Common/BorderedButton';
 import SVGText from '../Common/SVGText'
-import MainLogo from "../Common/MainLogo";
+import MainLogo from "../../images/MainLogo";
 
 const IntroPage = () => (
     <div className={style.layout}>

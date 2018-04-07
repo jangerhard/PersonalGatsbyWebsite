@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import style from './HeaderComponent.module.css'
 import FlatButton from '../Common/FlatButton';
 import Link, {withPrefix} from 'gatsby-link';
-import MainLogo from "../../images/MainLogo";
+import MainLogo from "../Common/MainLogo";
 
 class Header extends Component {
 

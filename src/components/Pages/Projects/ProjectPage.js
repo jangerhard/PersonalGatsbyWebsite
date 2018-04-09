@@ -19,8 +19,7 @@ class ProjectPage extends React.Component {
                         tools={"React, Gatsby"}
                         image={websitePic}
                         shortDesc={"Education and Projects Showcase"}
-                        url={"https://test.no"}
-                        code={"https://github.com/jangerhard/PersonalGatsbyWebsite"}
+                        url={"https://github.com/jangerhard/PersonalGatsbyWebsite"}
                     />
                     <ProjectShowcase
                         title={"WalletWatcher"}

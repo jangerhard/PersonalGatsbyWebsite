@@ -8,7 +8,7 @@ import InfoIcon from 'react-icons/lib/fa/info-circle'
 class ProjectShowcase extends React.Component {
     render() {
         return (
-            <div className={styles.container}>
+            <a className={styles.container} href={this.props.url}>
                 <h3 className={styles.title}>{this.props.title}</h3>
                 <hr className={styles.break}/>
                 <div className={styles.tools}>
@@ -36,7 +36,7 @@ class ProjectShowcase extends React.Component {
                 <div className={styles.desc}>
                     {this.props.shortDesc}
                 </div>
-            </div>
+            </a>
         )
     }
 }

@@ -3,6 +3,8 @@
     flex-direction: column;
     text-align: center;
 
+    color: #484848;
+    text-decoration: none;
     width: 325px;
     margin: 10px;
     padding: 32px;
@@ -12,9 +14,11 @@
     animation: fadein 2s;
 }
 
-
 .container:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.container:hover .title {
+    text-decoration: underline;
 }
 
 .title {

@@ -25,6 +25,11 @@
     color: #465E84;
 }
 
+.desc {
+    padding-top: 5px;
+    text-align: start;
+}
+
 .break {
     width: 50px;
     height: 3px;

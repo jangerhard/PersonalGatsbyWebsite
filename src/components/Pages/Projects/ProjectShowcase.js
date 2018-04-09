@@ -32,6 +32,10 @@ class ProjectShowcase extends React.Component {
                     }
                 </div>
                 }
+
+                <div className={styles.desc}>
+                    {this.props.shortDesc}
+                </div>
             </div>
         )
     }
@@ -40,11 +44,11 @@ class ProjectShowcase extends React.Component {
 ProjectShowcase.propTypes = {
     title: PropTypes.string.isRequired,
     tools: PropTypes.string.isRequired,
-    shortDesc: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    shortDesc: PropTypes.string,
     location: PropTypes.string,
     url: PropTypes.string,
-    code: PropTypes.string,
-    image: PropTypes.string
+    code: PropTypes.string
 };
 
 export default ProjectShowcase;

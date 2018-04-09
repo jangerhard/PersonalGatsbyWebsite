@@ -8,6 +8,7 @@ import TutorsPic from "../../../images/TutorsScreenshot.png";
 import appdockPic from "../../../images/appdock.png";
 import ArcPic from "../../../images/arc2.jpg";
 
+
 class ProjectPage extends React.Component {
     render() {
         return (
@@ -37,6 +38,7 @@ class ProjectPage extends React.Component {
                         image={quizMasterPic}
                         url={"http://jangerhard-node.herokuapp.com/twiliopart2"}
                         code={"https://github.com/jangerhard/TwilioEducation"}
+
                     />
                     <ProjectShowcase
                         title={"Appdock"}

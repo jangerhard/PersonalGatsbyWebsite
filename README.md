@@ -3,3 +3,5 @@ This project is exploring how to use Gatsby for displaying static web pages, and
 
 ##
 Working on project section - DevBranch
+Currently has a 99/100 on yellowlab.tools, with a total page-weight of 257kb. 
+

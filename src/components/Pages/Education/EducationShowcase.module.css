@@ -1,7 +1,6 @@
 .page {
     display: flex;
     justify-content: center;
-    animation: fadein 2s;
 }
 
 .grid {
@@ -17,25 +16,6 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
         }
-    }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-ms-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
     }
 }
 

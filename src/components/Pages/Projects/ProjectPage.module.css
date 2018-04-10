@@ -7,6 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    animation: fadein 2s;
 }
 
 @supports (display: grid) {
@@ -24,5 +25,15 @@
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 20px;
         }
+    }
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

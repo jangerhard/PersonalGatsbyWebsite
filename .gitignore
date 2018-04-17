@@ -9,4 +9,4 @@ yarn-error.log
 /public
 
 .npmrc
-.env.development
+.env

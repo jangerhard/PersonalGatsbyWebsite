@@ -7,12 +7,20 @@ import quizMasterPic from "../../../images/quizMasterSmall.png";
 import TutorsPic from "../../../images/TutorsScreenshot.png";
 import appdockPic from "../../../images/appdock.png";
 import ArcPic from "../../../images/arc2.jpg";
+import GithubShowcase from 'react-github-showcase';
 
 
 class ProjectPage extends React.Component {
+
     render() {
         return (
             <div className={styles.projects}>
+
+                <div className={styles.github}                >
+                    {console.log("API KEY: " + process.env.REACT_APP_GITHUB_API_KEY)}
+                    <GithubShowcase username={"mariushe"} api_key={API_KEY}/>
+                </div>
+
                 <div className={styles.grid}>
                     <ProjectShowcase
                         title={"Personal Website"}
@@ -72,3 +80,5 @@ class ProjectPage extends React.Component {
 ProjectPage.propTypes = {};
 
 export default ProjectPage;
+
+export const API_KEY = process.env.REACT_APP_GITHUB_API_KEY;

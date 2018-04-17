@@ -17,7 +17,6 @@ class ProjectPage extends React.Component {
             <div className={styles.projects}>
 
                 <div className={styles.github}                >
-                    {console.log("API KEY: " + process.env.REACT_APP_GITHUB_API_KEY)}
                     <GithubShowcase username={"mariushe"} api_key={API_KEY}/>
                 </div>
 
@@ -81,4 +80,4 @@ ProjectPage.propTypes = {};
 
 export default ProjectPage;
 
-export const API_KEY = process.env.REACT_APP_GITHUB_API_KEY;
+export const API_KEY = process.env.GATSBY_GITHUB_API_KEY;

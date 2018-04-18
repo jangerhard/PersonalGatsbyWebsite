@@ -3,6 +3,10 @@
     flex-direction: column;
 }
 
+.github {
+    margin: 0 auto;
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;

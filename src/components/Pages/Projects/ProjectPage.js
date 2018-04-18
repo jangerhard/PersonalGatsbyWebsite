@@ -8,6 +8,7 @@ import TutorsPic from "../../../images/TutorsScreenshot.png";
 import appdockPic from "../../../images/appdock.png";
 import ArcPic from "../../../images/arc2.jpg";
 import GithubShowcase from 'react-github-showcase';
+import CardPage from "../../Common/CardPage";
 
 
 class ProjectPage extends React.Component {
@@ -16,8 +17,11 @@ class ProjectPage extends React.Component {
         return (
             <div className={styles.projects}>
 
-                <div className={styles.github}                >
-                    <GithubShowcase username={"mariushe"} api_key={API_KEY}/>
+                <div className={styles.github}>
+                    <CardPage>
+                        <GithubShowcase username={"jangerhard"}
+                                        api_key={API_KEY}/>
+                    </CardPage>
                 </div>
 
                 <div className={styles.grid}>

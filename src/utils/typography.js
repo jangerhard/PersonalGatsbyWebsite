@@ -13,6 +13,7 @@ const typography = new Typography({
     baseFontSize: '18px',
     baseLineHeight: 1.666,
     headerFontFamily: ['Josefin Sans', 'sans-serif'],
+    headerWeight: 300,
     bodyFontFamily: ['Josefin Sans', 'serif'],
 
 });

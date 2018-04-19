@@ -13,12 +13,12 @@ class SchoolShowcase extends React.Component {
                 <img className={styles.uniLogo}
                      src={this.props.imgSrc}/>
                 <div className={styles.infoWrapper}>
-                    <div className={styles.uniName}>
+                    <h3 className={styles.header}>
                         {this.props.name}
-                    </div>
-                    <div className={styles.uniLocation}>
+                    </h3>
+                    <h4 className={styles.header}>
                         {this.props.location}
-                    </div>
+                    </h4>
                     <hr/>
                     <div className={styles.uniInfo}>{this.props.title}</div>
                     {this.props.gpa &&

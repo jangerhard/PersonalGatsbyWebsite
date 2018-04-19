@@ -15,7 +15,6 @@ const typography = new Typography({
     headerFontFamily: ['Josefin Sans', 'sans-serif'],
     headerWeight: 300,
     bodyFontFamily: ['Josefin Sans', 'serif'],
-
 });
 
 export default typography;

@@ -9,4 +9,3 @@ Working on project section - DevBranch
 Currently has a 99/100 on yellowlab.tools, with a total page-weight of 238kb.
 
 # Live at: https://janschoepp.com
-

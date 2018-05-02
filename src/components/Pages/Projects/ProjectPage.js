@@ -6,6 +6,7 @@ import wallWatchPic from "../../../images/WalletWatcher.png";
 import quizMasterPic from "../../../images/quizMasterSmall.png";
 import TutorsPic from "../../../images/TutorsScreenshot.png";
 import appdockPic from "../../../images/appdock.png";
+import githubShowcasePic from "../../../images/githubshowcase.png";
 import ArcPic from "../../../images/arc2.jpg";
 import GithubShowcase from 'react-github-showcase';
 import CardPage from "../../Common/CardPage";
@@ -39,6 +40,15 @@ class ProjectPage extends React.Component {
                         image={wallWatchPic}
                         url={"https://play.google.com/store/apps/details?id=io.github.jangerhard.BitcoinWalletTracker"}
                         code={"https://github.com/jangerhard/BitcoinWalletTracker"}
+                    />
+                    <ProjectShowcase
+                        title={"Github Showcase"}
+                        tools={"React, GraphQL"}
+                        shortDesc={"React component showcasing latest Github" +
+                        " activity"}
+                        image={githubShowcasePic}
+                        url={"https://github.com/jangerhard/react-github-showcase#readme"}
+                        code={"https://github.com/jangerhard/react-github-showcase"}
                     />
                     <ProjectShowcase
                         title={"QuizMaster"}

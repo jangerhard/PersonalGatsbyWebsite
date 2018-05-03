@@ -1,5 +1,7 @@
 import React from 'react'
 import style from './SVGText.module.css'
+import CardPage from "./CardPage";
+import PropTypes from "prop-types";
 
 const SVGText = ({text}) => (
 
@@ -10,5 +12,9 @@ const SVGText = ({text}) => (
     </svg>
 
 );
+
+SVGText.propTypes = {
+    text: PropTypes.string
+};
 
 export default SVGText;

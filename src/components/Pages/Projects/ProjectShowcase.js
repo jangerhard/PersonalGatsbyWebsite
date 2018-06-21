@@ -2,44 +2,17 @@ import React from "react";
 import PropTypes from 'prop-types'
 import styles from './ProjectShowcase.module.css'
 
-import GithubIcon from 'react-icons/lib/fa/github'
-import InfoIcon from 'react-icons/lib/fa/info-circle'
+const ProjectShowcase = ({url, title, image, code, tools,shortDesc}) => (
+    <a className={styles.container} href={url}>
+        <h3 className={styles.title}>{title}</h3>
+        <hr className={styles.break}/>
+        <div className={styles.tools}>{tools}</div>
 
-class ProjectShowcase extends React.Component {
-    render() {
-        return (
-            <a className={styles.container} href={this.props.url}>
-                <h3 className={styles.title}>{this.props.title}</h3>
-                <hr className={styles.break}/>
-                <div className={styles.tools}>
-                    {this.props.tools}
-                </div>
+        {image && <img className={styles.image} src={image}/>}
 
-                {this.props.image &&
-                <img className={styles.image} src={this.props.image}/>
-                }
-                {false &&
-                <div className={styles.icons}>
-                    {this.props.code &&
-                    <a className={styles.button} href={this.props.code}>
-                        <GithubIcon/>
-                    </a>
-                    }
-                    {this.props.url &&
-                    <a className={styles.button} href={this.props.url}>
-                        <InfoIcon/>
-                    </a>
-                    }
-                </div>
-                }
-
-                <div className={styles.desc}>
-                    {this.props.shortDesc}
-                </div>
-            </a>
-        )
-    }
-}
+        <div className={styles.desc}>{shortDesc}</div>
+    </a>
+);
 
 ProjectShowcase.propTypes = {
     title: PropTypes.string.isRequired,

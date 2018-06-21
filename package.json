@@ -11,10 +11,8 @@
     "gatsby-plugin-typography": "^1.7.18",
     "prop-types": "^15.6.1",
     "react": "^15.6.2",
-    "react-fontawesome": "^1.6.1",
     "react-github-showcase": "0.0.17",
-    "react-helmet": "^5.2.0",
-    "react-icons": "^2.2.7"
+    "react-helmet": "^5.2.0"
   },
   "keywords": [
     "gatsby"

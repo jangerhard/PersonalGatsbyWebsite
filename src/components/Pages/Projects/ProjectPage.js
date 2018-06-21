@@ -12,83 +12,76 @@ import GithubShowcase from 'react-github-showcase';
 import CardPage from "../../Common/CardPage";
 
 
-class ProjectPage extends React.Component {
+const ProjectPage = () => (
+    <div className={styles.projects}>
 
-    render() {
-        return (
-            <div className={styles.projects}>
+        <CardPage>
+            <GithubShowcase username={"jangerhard"}
+                            api_key={API_KEY}/>
+        </CardPage>
 
-                <div className={styles.github}>
-                    <CardPage>
-                        <GithubShowcase username={"jangerhard"}
-                                        api_key={API_KEY}/>
-                    </CardPage>
-                </div>
+        <div className={styles.grid}>
+            <ProjectShowcase
+                title={"Personal Website"}
+                tools={"React, Gatsby"}
+                image={websitePic}
+                shortDesc={"Education and Projects Showcase"}
+                url={"https://github.com/jangerhard/PersonalGatsbyWebsite"}
+            />
+            <ProjectShowcase
+                title={"WalletWatcher"}
+                tools={"Java (Android)"}
+                shortDesc={"App tracking scanned Bitcoin addresses' transactions"}
+                image={wallWatchPic}
+                url={"https://play.google.com/store/apps/details?id=io.github.jangerhard.BitcoinWalletTracker"}
+                code={"https://github.com/jangerhard/BitcoinWalletTracker"}
+            />
+            <ProjectShowcase
+                title={"Github Showcase"}
+                tools={"React, GraphQL"}
+                shortDesc={"React component showcasing latest Github" +
+                " activity"}
+                image={githubShowcasePic}
+                url={"https://github.com/jangerhard/react-github-showcase#readme"}
+                code={"https://github.com/jangerhard/react-github-showcase"}
+            />
+            <ProjectShowcase
+                title={"QuizMaster"}
+                tools={"Node.js, Firebase, Twilio"}
+                location={"New York City, USA"}
+                shortDesc={"Cellphone-based Trivia Game targeting areas without WIFI"}
+                image={quizMasterPic}
+                url={"http://jangerhard-node.herokuapp.com/twiliopart2"}
+                code={"https://github.com/jangerhard/TwilioEducation"}
 
-                <div className={styles.grid}>
-                    <ProjectShowcase
-                        title={"Personal Website"}
-                        tools={"React, Gatsby"}
-                        image={websitePic}
-                        shortDesc={"Education and Projects Showcase"}
-                        url={"https://github.com/jangerhard/PersonalGatsbyWebsite"}
-                    />
-                    <ProjectShowcase
-                        title={"WalletWatcher"}
-                        tools={"Java (Android)"}
-                        shortDesc={"App tracking scanned Bitcoin addresses' transactions"}
-                        image={wallWatchPic}
-                        url={"https://play.google.com/store/apps/details?id=io.github.jangerhard.BitcoinWalletTracker"}
-                        code={"https://github.com/jangerhard/BitcoinWalletTracker"}
-                    />
-                    <ProjectShowcase
-                        title={"Github Showcase"}
-                        tools={"React, GraphQL"}
-                        shortDesc={"React component showcasing latest Github" +
-                        " activity"}
-                        image={githubShowcasePic}
-                        url={"https://github.com/jangerhard/react-github-showcase#readme"}
-                        code={"https://github.com/jangerhard/react-github-showcase"}
-                    />
-                    <ProjectShowcase
-                        title={"QuizMaster"}
-                        tools={"Node.js, Firebase, Twilio"}
-                        location={"New York City, USA"}
-                        shortDesc={"Cellphone-based Trivia Game targeting areas without WIFI"}
-                        image={quizMasterPic}
-                        url={"http://jangerhard-node.herokuapp.com/twiliopart2"}
-                        code={"https://github.com/jangerhard/TwilioEducation"}
-
-                    />
-                    <ProjectShowcase
-                        title={"AppliCafe"}
-                        tools={"Java (Android), Firebase"}
-                        location={"New York City, USA"}
-                        shortDesc={"Technology outreach project targeting Senegal"}
-                        image={appdockPic}
-                        url={"http://mobilesenegal.org/applicafe/"}
-                    />
-                    <ProjectShowcase
-                        title={"NOMO3D: The Arc"}
-                        tools={"Java (Android), Bluetooth Low Energy, Arduino"}
-                        location={"Helsinki, Finland"}
-                        shortDesc={"Interface Controlling a mobile 3D Scanner"}
-                        image={ArcPic}
-                        url={"http://nomo3d.com/"}
-                    />
-                    <ProjectShowcase
-                        title={"NeedTutor"}
-                        tools={"Java (Android), Bluetooth Low Energy"}
-                        shortDesc={"App utilizing beacons to locate nearby available tutors"}
-                        image={TutorsPic}
-                        url={"https://play.google.com/store/apps/details?id=com.pacemobilelab.TutorsAtSeidenberg&hl=en"}
-                        code={"https://github.com/paceuniversity/pacemobilelab/tree/master/Tutor"}
-                    />
-                </div>
-            </div>
-        )
-    }
-}
+            />
+            <ProjectShowcase
+                title={"AppliCafe"}
+                tools={"Java (Android), Firebase"}
+                location={"New York City, USA"}
+                shortDesc={"Technology outreach project targeting Senegal"}
+                image={appdockPic}
+                url={"http://mobilesenegal.org/applicafe/"}
+            />
+            <ProjectShowcase
+                title={"NOMO3D: The Arc"}
+                tools={"Java (Android), Bluetooth Low Energy, Arduino"}
+                location={"Helsinki, Finland"}
+                shortDesc={"Interface Controlling a mobile 3D Scanner"}
+                image={ArcPic}
+                url={"http://nomo3d.com/"}
+            />
+            <ProjectShowcase
+                title={"NeedTutor"}
+                tools={"Java (Android), Bluetooth Low Energy"}
+                shortDesc={"App utilizing beacons to locate nearby available tutors"}
+                image={TutorsPic}
+                url={"https://play.google.com/store/apps/details?id=com.pacemobilelab.TutorsAtSeidenberg&hl=en"}
+                code={"https://github.com/paceuniversity/pacemobilelab/tree/master/Tutor"}
+            />
+        </div>
+    </div>
+);
 
 ProjectPage.propTypes = {};
 

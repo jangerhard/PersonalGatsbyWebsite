@@ -6,9 +6,7 @@ import background from '../../images/background.svg'
 const Background = ({children}) => (
     <div
         className={style.background}
-        style={{
-            backgroundImage: `url(${background})`
-        }}>
+        style={{backgroundImage: `url(${background})`}}>
         {children}
     </div>
 );

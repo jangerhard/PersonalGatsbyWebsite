@@ -1,15 +1,15 @@
 import React from "react";
 import PropTypes from 'prop-types'
 import styles from './SchoolShowcase.module.css'
+import Img from 'gatsby-image'
 
-const SchoolShowcase = ({name, title, location, year, month, gpa, imgSrc}) => (
+const SchoolShowcase = ({name, title, location, year, month, gpa, imgSrc, data}) => (
     <div className={styles.container}>
         <div className={styles.date}>
             <span className={styles.year}>{year}</span>
             <span className={styles.month}>{month}</span>
         </div>
-        <img className={styles.uniLogo}
-             src={imgSrc}/>
+        <Img resolutions={data.fileName.childImageSharp.resolutions}/>
         <div className={styles.infoWrapper}>
             <h3 className={styles.header}>{name}</h3>
             <h4 className={styles.header}>{location}</h4>
@@ -31,3 +31,15 @@ SchoolShowcase.propTypes = {
 };
 
 export default SchoolShowcase;
+
+export const query = graphql`
+  query indexQuery {
+    fileName:file(relativePath: { eq: "images/pace_logo.jpg" }) {
+      childImageSharp {
+        resolutions(width: 200) {
+          ...GatsbyImageSharpResolutions
+        }
+      }
+    }
+  }
+`;

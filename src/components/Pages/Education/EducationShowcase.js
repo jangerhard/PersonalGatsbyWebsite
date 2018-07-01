@@ -1,9 +1,6 @@
 import React from "react";
 import styles from './EducationShowcase.module.css'
 import SchoolShowcase from "./SchoolShowcase";
-import paceLogo from "../../../images/pace_logo.jpg";
-import uisLogo from "../../../images/uis_logo.png";
-import polyULogo from "../../../images/polyu_logo.png";
 
 const EducationShowcase = () => (
     <div className={styles.page}>
@@ -13,7 +10,7 @@ const EducationShowcase = () => (
                 title={"Master of Computer Science"}
                 location={"New York City, USA"}
                 gpa={3.86}
-                imgSrc={paceLogo}
+                imgSrc="/images/pace_logo.jpg"
                 year={2017}
                 month={"May"}
             />
@@ -21,14 +18,14 @@ const EducationShowcase = () => (
                 name={"Hong Kong Polytechnic University"}
                 title={"Exchange Year"}
                 location={"Hung Hom, Hong Kong"}
-                imgSrc={polyULogo}
+                imgSrc="/images/uis_logo.png"
                 year={2013}
             />
             <SchoolShowcase
                 name={"University of Stavanger"}
                 title={"Bachelor of Computer Engineering"}
                 location={"Stavanger, Norway"}
-                imgSrc={uisLogo}
+                imgSrc="/images/polyu_logo.png"
                 year={2014}
                 month={"May"}
             />

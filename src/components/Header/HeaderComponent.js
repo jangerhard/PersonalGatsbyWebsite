@@ -4,35 +4,32 @@ import FlatButton from '../Common/FlatButton';
 import Link, {withPrefix} from 'gatsby-link';
 import MainLogo from "../Common/MainLogo";
 
-class Header extends Component {
+const Header = () => {
 
-    render() {
+    let isHomePage = typeof window !== 'undefined'
+        && window.location.pathname === withPrefix("/");
 
-        let isHomePage = typeof window !== 'undefined'
-            && window.location.pathname === withPrefix("/");
+    return (
 
-        return (
+        <div className={style.header}>
 
-            <div className={style.header}>
+            {!isHomePage ? (
+                <Link to="/">
+                    <MainLogo size={70}/>
+                </Link>
+            ) : (
+                <div className={style.emptyDiv}/>
+            )}
 
-                {!isHomePage ? (
-                    <Link to="/">
-                        <MainLogo size={70}/>
-                    </Link>
-                ) : (
-                    <div className={style.emptyDiv}/>
-                )}
+            <div className={style.links}>
 
-                <div className={style.links}>
+                <FlatButton to="/education/" name="Education"/>
+                <FlatButton to="/contact/" name="Contact"/>
+                <FlatButton to="/projects/" name="Projects"/>
 
-                    <FlatButton to="/education/" name="Education"/>
-                    <FlatButton to="/contact/" name="Contact"/>
-                    <FlatButton to="/projects/" name="Projects"/>
-
-                </div>
             </div>
-        );
-    }
-}
+        </div>
+    );
+};
 
 export default Header

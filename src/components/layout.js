@@ -1,12 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header/HeaderComponent'
 import styles from './index.module.css'
 import Background from "../components/Common/Background";
 
-const TemplateWrapper = ({children}) => (
+export default ({children}) => (
     <Background>
         <Helmet
             title="Jan Schøpp's Website"
@@ -22,13 +21,7 @@ const TemplateWrapper = ({children}) => (
         <Header/>
 
         <div className={styles.pages}>
-            {children()}
+            {children}
         </div>
     </Background>
 );
-
-TemplateWrapper.propTypes = {
-    children: PropTypes.func,
-};
-
-export default TemplateWrapper

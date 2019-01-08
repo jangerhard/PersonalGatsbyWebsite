@@ -1,10 +1,9 @@
 import React from 'react'
-import CardInfo from '../components/Common/CardInfo';
-import CardPage from '../components/Common/CardPage'
 import ProjectPage from "../components/Pages/Projects/ProjectPage";
+import Layout from '../components/layout';
 
 export default () => (
-
-    <ProjectPage/>
-
+    <Layout>
+        <ProjectPage/>
+    </Layout>
 );

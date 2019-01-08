@@ -1,20 +1,25 @@
 {
-  "name": "PersonalWebsite",
+  "name": "personalwebsite",
   "description": "Personal Website for Jan Schøpp",
   "version": "1.0.0",
   "author": "Jan Schøpp",
   "dependencies": {
-    "gatsby": "^1.9.223",
-    "gatsby-link": "^1.6.38",
-    "gatsby-plugin-netlify": "^1.0.19",
+    "gatsby": "^2.0.85",
+    "gatsby-link": "^2.0.7",
+    "gatsby-plugin-google-analytics": "^2.0.8",
+    "gatsby-plugin-netlify": "^2.0.6",
     "gatsby-plugin-react-helmet": "^2.0.6",
+    "gatsby-plugin-sass": "^2.0.7",
     "gatsby-plugin-typography": "^1.7.18",
     "prop-types": "^15.6.1",
-    "react": "latest",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "react-fontawesome": "^1.6.1",
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7",
-    "react-particles-js": "^2.1.1"
+    "react-particles-js": "^2.1.1",
+    "react-typography": "^0.16.18",
+    "typography": "^0.16.18"
   },
   "keywords": [
     "gatsby"
